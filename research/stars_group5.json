@@ -1,0 +1,416 @@
+[
+  {
+    "name": "LHS 288",
+    "ra_hours": 10.739,
+    "dec_deg": -61.21,
+    "distance_ly": 15.76,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "LHS 288",
+        "mass_msun": 0.1085,
+        "spectral_type": "M5.5V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Carina",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "LHS 288 b (unnamed astrometric candidate)",
+        "status": "unconfirmed",
+        "note": "2007 astrometric study suggested a possible ~2.4 Jupiter-mass companion, but the authors could not rule out an undetected faint star; never confirmed and not in the NASA Exoplanet Archive."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=LHS+288",
+      "https://en.wikipedia.org/wiki/LHS_288",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 206.97 mas (SIMBAD) = 15.76 ly; your 15.70 is within tolerance. Mass 0.1085+/-0.0091 Msun (CARMENES-based value cited on Wikipedia). SIMBAD spectral type M5.5V; Wikipedia gives M5V. Age not constrained."
+  },
+  {
+    "name": "GJ 1002",
+    "ra_hours": 0.112,
+    "dec_deg": -7.538,
+    "distance_ly": 15.81,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "GJ 1002",
+        "mass_msun": 0.12,
+        "spectral_type": "M5.5V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Cetus",
+    "planets": [
+      {
+        "name": "GJ 1002 b",
+        "host": "GJ 1002",
+        "semi_major_axis_au": 0.0457,
+        "period_days": 10.3465,
+        "mass_earth": 1.08,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201002"
+      },
+      {
+        "name": "GJ 1002 c",
+        "host": "GJ 1002",
+        "semi_major_axis_au": 0.0738,
+        "period_days": 21.202,
+        "mass_earth": 1.36,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201002"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+1002",
+      "https://en.wikipedia.org/wiki/Gliese_1002",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201002",
+      "https://ui.adsabs.harvard.edu/abs/2023A&A...670A...5S/abstract"
+    ],
+    "notes": "Planets from Suarez Mascareno et al. 2023 (RV, ESPRESSO+CARMENES); both non-transiting, both in the habitable zone. Radii unknown (Archive lists ~1.03/1.10 Re but these are 'Calculated Value' from a mass-radius relation, so set null). Distance from Gaia DR3 parallax 206.35 mas. Age not well constrained."
+  },
+  {
+    "name": "Gliese 412",
+    "ra_hours": 11.091,
+    "dec_deg": 43.527,
+    "distance_ly": 16.0,
+    "position_corrections": "Distance corrected 15.80 -> 16.00 ly (Gaia DR3 parallax: A 203.89 mas = 16.00 ly; B/WX UMa 203.83 mas = 16.00 ly). RA/Dec fine.",
+    "components": [
+      {
+        "name": "Gliese 412 A",
+        "mass_msun": 0.387,
+        "spectral_type": "M1.0V"
+      },
+      {
+        "name": "Gliese 412 B (WX Ursae Majoris)",
+        "mass_msun": 0.0952,
+        "spectral_type": "M6.0V"
+      }
+    ],
+    "age_gyr": "3",
+    "constellation": "Ursa Major",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+412+A",
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=WX+UMa",
+      "https://en.wikipedia.org/wiki/Gliese_412"
+    ],
+    "notes": "No planet claims found; RV monitoring of A showed no significant planet-induced variation and speckle imaging found no companion at 1-10 AU. B is a UV Ceti-type flare star. Age 3 Gyr is a single cited estimate on Wikipedia; treat as approximate. Separation A-B ~28 arcsec (B at RA 11.0919 h, Dec +43.522)."
+  },
+  {
+    "name": "Groombridge 1618",
+    "ra_hours": 10.189,
+    "dec_deg": 49.454,
+    "distance_ly": 15.89,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Groombridge 1618",
+        "mass_msun": 0.67,
+        "spectral_type": "K7.5Ve"
+      }
+    ],
+    "age_gyr": "6.6",
+    "constellation": "Ursa Major",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Groombridge 1618 (122-day RV signal)",
+        "status": "unconfirmed / likely stellar activity",
+        "note": "Marcy & Benitz 1989 reported a 122-day periodicity interpretable as a >=4 Jupiter-mass planet; possibly due to stellar activity, never confirmed. A 2010 MMT imaging search found no companion. Herschel found evidence of a cold debris disk."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+380",
+      "https://en.wikipedia.org/wiki/Groombridge_1618"
+    ],
+    "notes": "Also GJ 380. Distance from Gaia DR3 parallax 205.31 mas = 15.89 ly. Mass 0.670+/-0.033 Msun. SIMBAD spectral type K6VeFe-1 vs Wikipedia K7.5Ve. Age 6.6 Gyr is a single estimate."
+  },
+  {
+    "name": "AD Leonis",
+    "ra_hours": 10.327,
+    "dec_deg": 19.87,
+    "distance_ly": 16.19,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "AD Leonis",
+        "mass_msun": 0.423,
+        "spectral_type": "M3.5eV"
+      }
+    ],
+    "age_gyr": "0.025-0.3",
+    "constellation": "Leo",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "AD Leonis b",
+        "status": "refuted (stellar activity)",
+        "note": "Tuomi et al. 2018 proposed a 2.23-day RV signal (~0.24 Jupiter masses min.) matching the stellar rotation period. Studies from 2020 onward attributed it to stellar activity; a 2022 study ruled out planets >27 Earth masses at the rotation period. Not in NASA Exoplanet Archive confirmed table."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=AD+Leo",
+      "https://en.wikipedia.org/wiki/AD_Leonis",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
+    ],
+    "notes": "Young, very active flare star. Distance from Gaia DR3 parallax 201.41 mas = 16.19 ly. SIMBAD lists spectral type dM3; Wikipedia M3.5eV."
+  },
+  {
+    "name": "Gliese 832",
+    "ra_hours": 21.559,
+    "dec_deg": -49.009,
+    "distance_ly": 16.2,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 832",
+        "mass_msun": 0.45,
+        "spectral_type": "M1.5V"
+      }
+    ],
+    "age_gyr": "4.5-8.1",
+    "constellation": "Grus",
+    "planets": [
+      {
+        "name": "GJ 832 b",
+        "host": "Gliese 832",
+        "semi_major_axis_au": 3.7,
+        "period_days": 3853,
+        "mass_earth": 314.65,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20832"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Gliese 832 c",
+        "status": "refuted",
+        "note": "Announced 2014 as a habitable-zone super-Earth; Gorrini et al. 2022 showed the RV signal behaves like stellar activity. Not in the NASA Exoplanet Archive confirmed table."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+832",
+      "https://en.wikipedia.org/wiki/Gliese_832",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20832",
+      "https://ui.adsabs.harvard.edu/abs/2023A&A...678A.107P/abstract"
+    ],
+    "notes": "GJ 832 b values are the Archive default (Philipot et al. 2023, RV+astrometry), giving a TRUE mass of ~0.99 Jupiter masses (314.65 Me). Other solutions: An et al. 2025 330 Me, a=3.651 AU; older RV-only minimum masses ~200-216 Me. Radius is only an Archive 'Calculated Value', so null. Age: Wikipedia 6+/-1.5 Gyr; Philipot 2023 8.1 Gyr - range given. Spectral type: SIMBAD M1.5V, Wikipedia M2V. Distance from Gaia DR3 parallax 201.33 mas."
+  },
+  {
+    "name": "40 Eridani",
+    "ra_hours": 4.255,
+    "dec_deg": -7.653,
+    "distance_ly": 16.34,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "40 Eridani A (Keid)",
+        "mass_msun": 0.78,
+        "spectral_type": "K0.5V"
+      },
+      {
+        "name": "40 Eridani B",
+        "mass_msun": 0.558,
+        "spectral_type": "DA4 (white dwarf)"
+      },
+      {
+        "name": "40 Eridani C",
+        "mass_msun": 0.198,
+        "spectral_type": "M4.5Ve"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Eridanus",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "40 Eridani b (HD 26965 b, 'Vulcan')",
+        "status": "refuted (stellar activity)",
+        "note": "Proposed in 2018 as a ~42-day super-Earth. Burrows et al. 2024 ('The death of Vulcan', NEID) found the RV signal is rotationally modulated stellar activity. Not in the NASA Exoplanet Archive confirmed table."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=40+Eri",
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=40+Eri+B",
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=40+Eri+C",
+      "https://en.wikipedia.org/wiki/40_Eridani",
+      "https://science.nasa.gov/universe/exoplanets/discovery-alert-spocks-home-planet-goes-poof/",
+      "https://astrobiology.com/2024/05/29/star-treks-vulcan-thought-to-orbit-40-eridani-a-is-not-a-planet-after-all/"
+    ],
+    "notes": "Distance from Gaia DR3 parallax of A, 199.61 mas = 16.34 ly (your 16.30 within tolerance). Age of A is poorly constrained (6.9+/-4.7 Gyr), so null; B's white-dwarf cooling age is ~1.8 Gyr (not total system age). B's spectral type: Wikipedia DA4, SIMBAD DA2.9. B mass 0.558+/-0.012 per Wikipedia (older literature ~0.573)."
+  },
+  {
+    "name": "70 Ophiuchi",
+    "ra_hours": 18.091,
+    "dec_deg": 2.5,
+    "distance_ly": 16.66,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "70 Ophiuchi A",
+        "mass_msun": 0.8827,
+        "spectral_type": "K0V"
+      },
+      {
+        "name": "70 Ophiuchi B",
+        "mass_msun": 0.7319,
+        "spectral_type": "K4V"
+      }
+    ],
+    "age_gyr": "2.8-6.2",
+    "constellation": "Ophiuchus",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "70 Oph historical companion claims",
+        "status": "refuted",
+        "note": "19th/20th-century astrometric claims (Jacob and See in the 1800s; 1932 and 1943 proposals) were shown to be erroneous. Modern RV searches find no planets; Saturn-mass-or-smaller habitable-zone planets around A not excluded."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=70+Oph",
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=70+Oph+A",
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=70+Oph+B",
+      "https://en.wikipedia.org/wiki/70_Ophiuchi"
+    ],
+    "notes": "Distance: Gaia DR3 gives 16.68 ly (A, 195.57 mas) and 16.65 ly (B, 195.86 mas); Hipparcos (van Leeuwen 2007) gives 16.58 ly. Used 16.66 (mean of Gaia components); your 16.6 within tolerance. Age estimates disagree: ~2.8-3.0 Gyr (per-component fits) vs 6.2+/-1.0 Gyr; range given."
+  },
+  {
+    "name": "Altair",
+    "ra_hours": 19.846,
+    "dec_deg": 8.868,
+    "distance_ly": 16.73,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Altair",
+        "mass_msun": 1.86,
+        "spectral_type": "A7Vn"
+      }
+    ],
+    "age_gyr": "0.078-0.098",
+    "constellation": "Aquila",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=alf+Aql",
+      "https://en.wikipedia.org/wiki/Altair"
+    ],
+    "notes": "Distance from Hipparcos (van Leeuwen 2007) parallax 194.95 mas = 16.73 ly. Age 88+/-10 Myr (Rieutord et al. 2024, cited on Wikipedia). Rapid rotator (oblate). Visual companions WDS B-G are optical, not physically associated. No planet claims."
+  },
+  {
+    "name": "Sun",
+    "ra_hours": null,
+    "dec_deg": null,
+    "distance_ly": 0,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Sun",
+        "mass_msun": 1,
+        "spectral_type": "G2V"
+      }
+    ],
+    "age_gyr": "4.6",
+    "constellation": null,
+    "planets": [
+      {
+        "name": "Mercury",
+        "host": "Sun",
+        "semi_major_axis_au": 0.387,
+        "period_days": 88.0,
+        "mass_earth": 0.0553,
+        "mass_is_minimum": false,
+        "radius_earth": 0.383,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Venus",
+        "host": "Sun",
+        "semi_major_axis_au": 0.723,
+        "period_days": 224.7,
+        "mass_earth": 0.815,
+        "mass_is_minimum": false,
+        "radius_earth": 0.949,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Earth",
+        "host": "Sun",
+        "semi_major_axis_au": 1.0,
+        "period_days": 365.2,
+        "mass_earth": 1.0,
+        "mass_is_minimum": false,
+        "radius_earth": 1.0,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Mars",
+        "host": "Sun",
+        "semi_major_axis_au": 1.52,
+        "period_days": 687.0,
+        "mass_earth": 0.107,
+        "mass_is_minimum": false,
+        "radius_earth": 0.532,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Jupiter",
+        "host": "Sun",
+        "semi_major_axis_au": 5.2,
+        "period_days": 4331,
+        "mass_earth": 317.8,
+        "mass_is_minimum": false,
+        "radius_earth": 11.21,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Saturn",
+        "host": "Sun",
+        "semi_major_axis_au": 9.57,
+        "period_days": 10747,
+        "mass_earth": 95.2,
+        "mass_is_minimum": false,
+        "radius_earth": 9.45,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Uranus",
+        "host": "Sun",
+        "semi_major_axis_au": 19.17,
+        "period_days": 30589,
+        "mass_earth": 14.5,
+        "mass_is_minimum": false,
+        "radius_earth": 4.01,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      },
+      {
+        "name": "Neptune",
+        "host": "Sun",
+        "semi_major_axis_au": 30.18,
+        "period_days": 59800,
+        "mass_earth": 17.1,
+        "mass_is_minimum": false,
+        "radius_earth": 3.88,
+        "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html",
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "https://en.wikipedia.org/wiki/Sun"
+    ],
+    "notes": "Planet values from NASA NSSDC fact sheets: semi-major axis, mass and radius are ratios to Earth (radius = equatorial diameter ratio); periods in days from the main fact sheet. Fact sheet lists Earth's period as 365.2 d. NSSDC Sun fact sheet gives no age; 4.6 Gyr (meteoritic ~4.57 Gyr) from Wikipedia. RA/Dec null for the Sun."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "note": "Bounded AI research batches for starlight. Each batch had a fixed object list, a per-object source-lookup cap, and wrote structured JSON on completion; a batch is re-run only if its output file is missing or marked incomplete. Token counts are the delegated agents' reported totals. The catalog itself (17,657 objects) was built from bulk downloads with no LLM involvement.",
+  "batches": [
+    { "id": "nearby-1", "output": "stars_group1.json", "objects": 10, "kind": "research", "status": "complete", "tokens": 53852 },
+    { "id": "nearby-2", "output": "stars_group2.json", "objects": 10, "kind": "research", "status": "complete", "tokens": 60869 },
+    { "id": "nearby-3", "output": "stars_group3.json", "objects": 10, "kind": "research", "status": "complete", "tokens": 58127 },
+    { "id": "nearby-4", "output": "stars_group4.json", "objects": 10, "kind": "research", "status": "complete", "tokens": 53779 },
+    { "id": "nearby-5", "output": "stars_group5.json", "objects": 10, "kind": "research", "status": "complete", "tokens": 58127 },
+    { "id": "solar-planets-moons", "output": "solar_planets_moons.json", "objects": 32, "kind": "research", "status": "complete", "tokens": 64565 },
+    { "id": "solar-dwarfs", "output": "solar_dwarfs.json", "objects": 23, "kind": "research", "status": "complete", "tokens": 85939 },
+    { "id": "messier-nebulae", "output": "messier_nebulae.json", "objects": 16, "kind": "research", "status": "complete", "tokens": 50110 },
+    { "id": "featured-stars", "output": "featured_batch1.json", "objects": 15, "kind": "research", "status": "complete", "tokens": 42841 },
+    { "id": "featured-deep-sky", "output": "featured_batch2.json", "objects": 15, "kind": "research", "status": "complete", "tokens": 35207 }
+  ],
+  "totals": { "batches": 10, "objects": 151, "tokens": 563416, "vision": 0 }
+}

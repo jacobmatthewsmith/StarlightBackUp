@@ -1,0 +1,419 @@
+[
+  {
+    "name": "Proxima Centauri",
+    "ra_hours": 14.4953,
+    "dec_deg": -62.679,
+    "distance_ly": 4.2465,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Proxima Centauri (Alpha Centauri C)",
+        "mass_msun": 0.1221,
+        "spectral_type": "M5.5Ve"
+      }
+    ],
+    "age_gyr": "4.85",
+    "constellation": "Centaurus",
+    "planets": [
+      {
+        "name": "Proxima Centauri b",
+        "host": "Proxima Centauri",
+        "semi_major_axis_au": 0.04848,
+        "period_days": 11.18465,
+        "mass_earth": 1.055,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Proxima%20Cen%20b"
+      },
+      {
+        "name": "Proxima Centauri d",
+        "host": "Proxima Centauri",
+        "semi_major_axis_au": 0.02881,
+        "period_days": 5.12338,
+        "mass_earth": 0.26,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Proxima%20Cen%20d"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Proxima Centauri c",
+        "status": "candidate, unconfirmed/disputed",
+        "note": "Proposed 2020 as a long-period planet. Not in the NASA Exoplanet Archive confirmed table. Suarez Mascareno et al. 2025 (NIRPS) could not confirm it, only hints of a lower-amplitude signal at similar period."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Proxima%20Cen",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Proxima_Centauri",
+      "https://ui.adsabs.harvard.edu/abs/2025A&A...700A..11M/abstract"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 768.0665 mas. Mass 0.1221 Msun from Kervella et al. 2017. Age 4.85 Gyr assumes coeval with Alpha Cen (ESO 2003 value). Planet parameters are the archive default set (Suarez Mascareno et al. 2025); masses are m sin i minimums. Proxima d confirmed 2025. Planet radii set to null: none of these planets transit; the NASA Exoplanet Archive pscomppars radius values are model-calculated from mass, not measured. Gravitationally bound to Alpha Cen AB at ~13,000 AU."
+  },
+  {
+    "name": "Alpha Centauri",
+    "ra_hours": 14.6601,
+    "dec_deg": -60.834,
+    "distance_ly": 4.344,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Alpha Centauri A (Rigil Kentaurus)",
+        "mass_msun": 1.0788,
+        "spectral_type": "G2V"
+      },
+      {
+        "name": "Alpha Centauri B (Toliman)",
+        "mass_msun": 0.9092,
+        "spectral_type": "K1V"
+      }
+    ],
+    "age_gyr": "6.22",
+    "constellation": "Centaurus",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Alpha Centauri Bb",
+        "status": "retracted/disproven 2015-2016",
+        "note": "Claimed 2012 (Dumusque et al.) as an Earth-mass planet; shown to be an artefact of RV data processing (Rajpaul et al. 2016)."
+      },
+      {
+        "name": "Alpha Centauri Bc (informal)",
+        "status": "unconfirmed single possible transit",
+        "note": "Possible single transit event in 2013-2014 Hubble data; never claimed as a discovery."
+      },
+      {
+        "name": "Alpha Centauri Ab / Candidate 1 (C1) / JWST S1",
+        "status": "candidate, unconfirmed",
+        "note": "Mid-IR imaging candidate (VLT NEAR 2021); JWST MIRI August 2024 found a point source at ~2 AU that may be a gas giant (Beichman et al. 2025 / Sanghi et al. 2025); needs follow-up to confirm. Not in NASA Exoplanet Archive confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Alpha_Centauri",
+      "https://ui.adsabs.harvard.edu/abs/2021AJ....162...14A/abstract"
+    ],
+    "notes": "Your distance 4.37 ly is within tolerance but slightly high; Akeson et al. 2021 parallax 750.81 mas gives 4.344 ly (SIMBAD's older Hipparcos 742.12 mas gives 4.395). Masses from Akeson et al. 2021. Age is model-dependent: Wikipedia currently cites 6.22 +/- 0.22 Gyr (recent asteroseismic/modelling work); other published estimates differ, so treat as approximate. Position is for A (B is ~0.1 deg away at most; currently a few arcsec)."
+  },
+  {
+    "name": "Barnard's Star",
+    "ra_hours": 17.9635,
+    "dec_deg": 4.693,
+    "distance_ly": 5.963,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Barnard's Star",
+        "mass_msun": 0.162,
+        "spectral_type": "M4V"
+      }
+    ],
+    "age_gyr": "~10",
+    "constellation": "Ophiuchus",
+    "planets": [
+      {
+        "name": "Barnard d",
+        "host": "Barnard's Star",
+        "semi_major_axis_au": 0.0188,
+        "period_days": 2.3402,
+        "mass_earth": 0.263,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Barnard%27s%20star"
+      },
+      {
+        "name": "Barnard b",
+        "host": "Barnard's Star",
+        "semi_major_axis_au": 0.0229,
+        "period_days": 3.1542,
+        "mass_earth": 0.299,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Barnard%27s%20star"
+      },
+      {
+        "name": "Barnard c",
+        "host": "Barnard's Star",
+        "semi_major_axis_au": 0.0274,
+        "period_days": 4.1244,
+        "mass_earth": 0.335,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Barnard%27s%20star"
+      },
+      {
+        "name": "Barnard e",
+        "host": "Barnard's Star",
+        "semi_major_axis_au": 0.0381,
+        "period_days": 6.7392,
+        "mass_earth": 0.193,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Barnard%27s%20star"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Barnard's Star b (2018 claim, Ribas et al.)",
+        "status": "refuted 2021",
+        "note": "Claimed 2018 super-Earth (m sin i ~3.2 Earth masses, ~0.4 AU). Refuted in 2021 (signal attributed to stellar activity). Unrelated to the current Barnard b (3.15-day), confirmed 2024."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Barnard%27s%20star",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Barnard%27s_Star",
+      "https://ui.adsabs.harvard.edu/abs/2025ApJ...982L...1B/abstract"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 546.9759 mas. Mass 0.162 Msun (Gonzalez Hernandez et al. 2024). Age ~10 Gyr (Riedel et al. 2005) is rough. Planet b discovered 2024 (Gonzalez Hernandez et al.); c, d, e confirmed 2025 (Basant et al. 2025, archive default parameters). Minimum masses. Planet radii set to null: none of these planets transit; the NASA Exoplanet Archive pscomppars radius values are model-calculated from mass, not measured. Highest proper motion of any star (~10.4 arcsec/yr), so position drifts noticeably over decades."
+  },
+  {
+    "name": "Luhman 16",
+    "ra_hours": 10.8206,
+    "dec_deg": -53.318,
+    "distance_ly": 6.51,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Luhman 16 A",
+        "mass_msun": 0.0338,
+        "spectral_type": "L7.5"
+      },
+      {
+        "name": "Luhman 16 B",
+        "mass_msun": 0.0281,
+        "spectral_type": "T0.5"
+      }
+    ],
+    "age_gyr": "0.4-0.8",
+    "constellation": "Vela",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Luhman 16 astrometric companion (2013 claim)",
+        "status": "not confirmed / ruled out",
+        "note": "Later astrometric monitoring excluded any third object >2 Jupiter masses; HST ruled out Neptune-mass objects with 1-2 yr periods (Bedin et al.)."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Luhman_16",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)"
+    ],
+    "notes": "Masses 35.4 +/- 0.2 and 29.4 +/- 0.2 Jupiter masses (Bedin et al. 2024), converted to Msun. Distance 6.510 ly from Bedin 2024 parallax 500.993 mas (SIMBAD/Gaia-based 501.557 mas gives 6.503; both match your 6.50). Age 510 +/- 95 Myr (Oceanus moving group, Gagne 2022); range 0.4-0.8 Gyr. QUIRK: the NASA Exoplanet Archive lists 'Luhman 16 b' in its confirmed planets table (it includes objects up to ~30 Jupiter masses): that is the brown dwarf B (9344 Earth masses ~29.4 MJ, a=3.52 AU, P=9697 d ~26.5 yr). It is deliberately listed here as a component, not a planet."
+  },
+  {
+    "name": "WISE 0855-0714",
+    "ra_hours": 8.9213,
+    "dec_deg": -7.247,
+    "distance_ly": 7.43,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "WISE 0855-0714",
+        "mass_msun": null,
+        "spectral_type": "Y4 (SIMBAD lists Y2)"
+      }
+    ],
+    "age_gyr": "1-10",
+    "constellation": "Hydra",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/WISE_0855%E2%88%920714",
+      "https://ui.adsabs.harvard.edu/abs/2021ApJS..253....7K/abstract"
+    ],
+    "notes": "Mass poorly constrained: ~3-10 Jupiter masses (~0.003-0.010 Msun; Luhman 2024), so mass_msun left null; choose ~5 MJ (~0.005 Msun) only if a game value is required, flagged as illustrative. Age 1-10 Gyr is assumed, not measured. Spectral type: Wikipedia lists Y4, SIMBAD Y2. Parallax 439.0 +/- 2.4 mas (Kirkpatrick et al. 2021) -> 7.43 ly. Coldest known brown dwarf (~285 K); very high proper motion so J2000 position differs from current. No companions found (JWST exomoon transit search negative)."
+  },
+  {
+    "name": "Wolf 359",
+    "ra_hours": 10.9414,
+    "dec_deg": 7.015,
+    "distance_ly": 7.856,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Wolf 359 (CN Leonis)",
+        "mass_msun": 0.11,
+        "spectral_type": "M6V"
+      }
+    ],
+    "age_gyr": "0.1-1.5",
+    "constellation": "Leo",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Wolf 359 b",
+        "status": "candidate, unconfirmed",
+        "note": "Outer candidate from Tuomi et al. 2019; Bowens-Rubin et al. 2023 could neither confirm nor refute it. Not in NASA Exoplanet Archive."
+      },
+      {
+        "name": "Wolf 359 c",
+        "status": "refuted (false positive)",
+        "note": "Inner candidate from Tuomi et al. 2019 shown to be caused by stellar rotation (Lafarga et al. 2021)."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Wolf_359",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 415.1794 mas. Mass 0.110 Msun (Pineda et al. 2021). Age 0.1-1.5 Gyr (Bowens-Rubin et al. 2023). Flare star."
+  },
+  {
+    "name": "Lalande 21185",
+    "ra_hours": 11.0556,
+    "dec_deg": 35.97,
+    "distance_ly": 8.304,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Lalande 21185 (GJ 411, HD 95735)",
+        "mass_msun": 0.389,
+        "spectral_type": "M2V"
+      }
+    ],
+    "age_gyr": "3.5-12",
+    "constellation": "Ursa Major",
+    "planets": [
+      {
+        "name": "Lalande 21185 b (GJ 411 b)",
+        "host": "Lalande 21185",
+        "semi_major_axis_au": 0.07879,
+        "period_days": 12.9394,
+        "mass_earth": 2.69,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20411%20b"
+      },
+      {
+        "name": "Lalande 21185 c (HD 95735 c)",
+        "host": "Lalande 21185",
+        "semi_major_axis_au": 2.94,
+        "period_days": 2946.0,
+        "mass_earth": 13.6,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%2095735%20c"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Lalande 21185 d",
+        "status": "candidate, unconfirmed",
+        "note": "~215.7-day, m sin i ~3.9 Earth masses, a ~0.51 AU (per Wikipedia); not in NASA Exoplanet Archive confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20411%20b",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Lalande_21185",
+      "https://ui.adsabs.harvard.edu/abs/2022AJ....163..218H/abstract"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 392.7529 mas. Planet parameters are archive defaults (Hurt et al. 2022); minimum masses. b discovered 2019 (Diaz et al.), c 2021 (Rosenthal et al.); the archive names c 'HD 95735 c'. Age 8.0 (+4.0/-4.5) Gyr is poorly constrained. Archive oddity: pscomppars lists sy_dist = 5.676 pc for GJ 411, inconsistent with the Gaia parallax (2.546 pc); use 8.30 ly. Planet radii set to null: none of these planets transit; the NASA Exoplanet Archive pscomppars radius values are model-calculated from mass, not measured."
+  },
+  {
+    "name": "Sirius",
+    "ra_hours": 6.7525,
+    "dec_deg": -16.716,
+    "distance_ly": 8.6,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Sirius A",
+        "mass_msun": 2.063,
+        "spectral_type": "A0mA1 Va"
+      },
+      {
+        "name": "Sirius B",
+        "mass_msun": 1.018,
+        "spectral_type": "DA2 (white dwarf)"
+      }
+    ],
+    "age_gyr": "0.2-0.3",
+    "constellation": "Canis Major",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Sirius C",
+        "status": "no detection; stellar-mass companion ruled out",
+        "note": "Historical claims of a third body; 2017 HST astrometry ruled out a stellar-mass Sirius C (a low-mass brown dwarf not excluded). Imaging excludes giant planets above ~11 MJ at 0.5 AU, 6-7 MJ at 1-2 AU, ~4 MJ at 10 AU (2015 study)."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Sirius",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars table)"
+    ],
+    "notes": "Distance 8.60 ly from Hipparcos parallax 379.21 +/- 1.58 mas (van Leeuwen 2007); Wikipedia gives 8.61 +/- 0.03 ly. Gaia DR3 parallax for Sirius B (374.49 +/- 0.23 mas) would give 8.71 ly; the A/B discrepancy is unresolved, so 8.6 ly retained. Masses from Bond et al. 2017. SIMBAD lists Sirius B as DA1.9."
+  },
+  {
+    "name": "Luyten 726-8",
+    "ra_hours": 1.6504,
+    "dec_deg": -17.951,
+    "distance_ly": 8.77,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Luyten 726-8 A (BL Ceti)",
+        "mass_msun": 0.122,
+        "spectral_type": "M5.5V"
+      },
+      {
+        "name": "Luyten 726-8 B (UV Ceti)",
+        "mass_msun": 0.116,
+        "spectral_type": "M6V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Cetus",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Luyten 726-8 b (GJ 65 b)",
+        "status": "candidate, unconfirmed",
+        "note": "2024 GRAVITY astrometry candidate super-Neptune, ~36-39 Earth masses, period ~156 days; host component uncertain. Not in NASA Exoplanet Archive."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Luyten_726-8"
+    ],
+    "notes": "Distance 8.770 ly from GRAVITY Collaboration 2024 parallax 371.92 +/- 0.42 mas (your 8.72 is within tolerance; Gaia DR3 gives 367.7 mas for A and 373.8 mas for B, noisy due to binarity). Masses from GRAVITY Collaboration 2024. Age not well constrained (no cited estimate found). UV Ceti is the prototype flare star."
+  },
+  {
+    "name": "Ross 154",
+    "ra_hours": 18.8304,
+    "dec_deg": -23.836,
+    "distance_ly": 9.706,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Ross 154 (V1216 Sgr)",
+        "mass_msun": 0.177,
+        "spectral_type": "M3.5Ve"
+      }
+    ],
+    "age_gyr": "0.2-0.6",
+    "constellation": "Sagittarius",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "Ross 154 (7-day signal)",
+        "status": "unconfirmed RV signal",
+        "note": "HARPS/CARMENES RV variation with ~7-day period: could be a super-Earth (m sin i ~1.5-2 Earth masses) or stellar activity. Not in NASA Exoplanet Archive."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (SIMBAD basic table)",
+      "https://en.wikipedia.org/wiki/Ross_154"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 336.0266 mas. Mass 0.177 Msun (Pineda et al. 2021). Age 0.2-0.6 Gyr (Ibanez Bustos et al. 2020). Flare star."
+  }
+]

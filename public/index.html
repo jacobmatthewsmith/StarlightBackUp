@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>starlight</title>
+  <link rel="stylesheet" href="app/app.css?v=7">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      cursor: pointer;
+    }
+
+    canvas.formed {
+      cursor: default;
+    }
+
+    canvas.draggable {
+      cursor: grab;
+      touch-action: none;
+    }
+
+    canvas.dragging {
+      cursor: grabbing;
+    }
+
+    /* Explainer prompts */
+    #caption {
+      position: fixed;
+      left: 50%;
+      bottom: 6vh;
+      transform: translateX(-50%);
+      max-width: 90vw;
+      color: #fff;
+      font: bold 17px/1.5 "Courier New", Courier, monospace;
+      text-align: center;
+      text-shadow: 0 0 6px #000, 0 0 2px #000; /* keeps text readable over stars */
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      pointer-events: none;
+    }
+
+    /* Words that join a prompt after it appears */
+    #caption span {
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    #caption.show,
+    #caption span.show {
+      opacity: 1;
+    }
+
+    /* ▸ marker: the beat is waiting for the player */
+    #caption.ready .more {
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    /* One-time "click to continue" hint */
+    #hint {
+      position: fixed;
+      left: 50%;
+      bottom: 2.5vh;
+      transform: translateX(-50%);
+      color: #777;
+      font: 14px "Courier New", Courier, monospace;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      pointer-events: none;
+    }
+
+    #hint.show {
+      opacity: 1;
+    }
+
+    /* Game mode covers the map; keep map-only UI out of the way. */
+    body.mode-game .map-ui,
+    body.mode-game #caption,
+    body.mode-game #hint { display: none; }
+
+    /* ---------- neighbourhood map UI ---------- */
+
+    .map-ui {
+      position: fixed;
+      color: #fff;
+      font: 13px/1.5 "Courier New", Courier, monospace;
+      text-shadow: 0 0 6px #000, 0 0 2px #000;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      pointer-events: none;
+    }
+
+    .map-ui.show {
+      opacity: 1;
+    }
+
+    /* Current task, top left */
+    #task {
+      top: 24px;
+      left: 24px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    #task .done {
+      color: #aaa;
+      font-weight: normal;
+    }
+
+    /* Stats for the star being visited, bottom left */
+    #stats {
+      left: 24px;
+      bottom: 24px;
+      max-width: min(520px, 80vw);
+    }
+
+    #stats h2 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+
+    #stats dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0 16px;
+      margin: 0;
+    }
+
+    #stats dt {
+      color: #999;
+    }
+
+    #stats dd {
+      margin: 0;
+    }
+
+    #stats .planet-list {
+      margin: 6px 0 0;
+      padding: 0;
+      list-style: none;
+      color: #ccc;
+    }
+
+    #stats .note {
+      margin-top: 6px;
+      color: #888;
+      font-size: 12px;
+    }
+
+    /* Zoom bar, right edge */
+    #zoombar {
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #zoombar.show {
+      pointer-events: auto;
+    }
+
+    #zoombar button {
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      border: 1px solid #fff;
+      font: bold 16px/1 "Courier New", Courier, monospace;
+      cursor: pointer;
+    }
+
+    #zoombar button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    #zoombar input[type="range"] {
+      writing-mode: vertical-lr;
+      direction: rtl;
+      width: 28px;
+      height: 200px;
+      margin: 0;
+      accent-color: #fff;
+      cursor: pointer;
+    }
+
+    #zoombar .reset {
+      width: auto;
+      height: auto;
+      padding: 2px 6px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    /* Scale bar under the zoom controls; right-aligned so it grows leftward */
+    #scale {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 12px;
+      text-align: right;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    #scale .bar {
+      height: 5px;
+      margin-left: auto;
+      border: 1px solid #fff;
+      border-top: none;
+    }
+
+    /* Short feedback lines on the map */
+    #toast {
+      left: 50%;
+      bottom: 12vh;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 17px;
+      text-align: center;
+      max-width: 90vw;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="sky" tabindex="0" aria-label="starlight. Click to begin."></canvas>
+  <div id="caption" role="status" aria-live="polite"></div>
+  <div id="hint"></div>
+
+  <header id="topbar" hidden></header>
+  <div id="auth-cta">
+    <button id="cta-signup" class="sl-btn">create account</button>
+    <button id="cta-login" class="sl-btn quiet">sign in</button>
+  </div>
+  <div id="account" role="dialog" aria-modal="true" aria-label="account" hidden></div>
+  <main id="game" hidden></main>
+
+  <div id="task" class="map-ui"></div>
+  <div id="stats" class="map-ui" aria-live="polite"></div>
+  <div id="toast" class="map-ui" role="status" aria-live="polite"></div>
+  <div id="zoombar" class="map-ui">
+    <button id="zoom-in" aria-label="Zoom in">+</button>
+    <input id="zoom-slider" type="range" min="0" max="1000" value="0" aria-label="Zoom">
+    <button id="zoom-out" aria-label="Zoom out">&minus;</button>
+    <button id="zoom-reset" class="reset" aria-label="Back to the Sun">sun</button>
+    <div id="scale" aria-live="off">
+      <div class="bar"></div>
+      <div class="label"></div>
+    </div>
+  </div>
+  <script src="star-data.js?v=2"></script>
+  <script src="solar-system.js?v=1"></script>
+  <script src="neighborhood.js?v=23"></script>
+  <script src="starlight.js?v=19"></script>
+  <script type="module" src="app/app.js?v=9"></script>
+</body>
+</html>

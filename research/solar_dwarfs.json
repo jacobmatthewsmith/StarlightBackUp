@@ -1,0 +1,320 @@
+{
+  "bodies": [
+    {
+      "name": "Ceres",
+      "category": "dwarf planet",
+      "semi_major_axis_au": 2.7656,
+      "eccentricity": 0.0797,
+      "longitude_of_perihelion_deg": 153.54,
+      "orbital_period_years": 4.6,
+      "mean_radius_km": 469.7,
+      "mass_kg": 9.38416e+20,
+      "known_moons": 0,
+      "moons": [],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = JPL mean (volume-equivalent) radius; mass from JPL dwarf-planet table (Park et al. 2016, Nature 537:515, Dawn gravity). Ceres is triaxial ~482x482x446 km semi-axes (964.4x964.2x891.8 km extents in SBDB)."
+    },
+    {
+      "name": "Pluto",
+      "category": "dwarf planet",
+      "semi_major_axis_au": 39.5886,
+      "eccentricity": 0.2518,
+      "longitude_of_perihelion_deg": 224.0,
+      "orbital_period_years": 249.09,
+      "mean_radius_km": 1188.3,
+      "mass_kg": 1.30246e+22,
+      "known_moons": 5,
+      "moons": [
+        {
+          "name": "Charon",
+          "semi_major_axis_km": 19595.764,
+          "orbital_period_days": 6.387221,
+          "eccentricity": 0.000161,
+          "mean_radius_km": 606.0,
+          "mass_kg": 1.5897e+21,
+          "notes": "a/e/P/mass: Brozovic & Jacobson 2024 (AJ 167:256); a is Pluto-centric. Radius: Nimmo et al. 2017. JPL GM 106.1 km^3/s^2 gives the same mass."
+        },
+        {
+          "name": "Styx",
+          "semi_major_axis_km": 43200,
+          "orbital_period_days": 20.16,
+          "eccentricity": 0.025,
+          "mean_radius_km": 5.2,
+          "mass_kg": null,
+          "notes": "JPL mean equatorial elements (PLU060, a rounded to 100 km). Radius from JPL table (irregular body, approximate). Mass not determined (JPL lists n/a)."
+        },
+        {
+          "name": "Nix",
+          "semi_major_axis_km": 49300,
+          "orbital_period_days": 24.85,
+          "eccentricity": 0.015,
+          "mean_radius_km": 18.0,
+          "mass_kg": 2.2474e+16,
+          "notes": "JPL PLU060 mean elements; radius JPL; mass from JPL GM 0.0015+/-0.0005 km^3/s^2 (~33% uncertain). Highly elongated body."
+        },
+        {
+          "name": "Kerberos",
+          "semi_major_axis_km": 58300,
+          "orbital_period_days": 32.17,
+          "eccentricity": 0.01,
+          "mean_radius_km": 6.0,
+          "mass_kg": null,
+          "notes": "JPL PLU060 mean elements; radius JPL (approximate, bilobed body). Mass not determined (JPL lists n/a)."
+        },
+        {
+          "name": "Hydra",
+          "semi_major_axis_km": 65200,
+          "orbital_period_days": 38.2,
+          "eccentricity": 0.009,
+          "mean_radius_km": 18.5,
+          "mass_kg": 2.9966e+16,
+          "notes": "JPL PLU060 mean elements; radius JPL; mass from JPL GM 0.0020+/-0.0003 km^3/s^2. Elongated body."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2457588.5. SBDB's Pluto orbit solution has an older epoch (JD 2457588.5 = 2016-Jul-31) than the others. Radius 1188.3 km (Archinal et al. 2018 / New Horizons); mass 1.30246e22 kg (Brozovic & Jacobson 2024) from JPL dwarf-planet table. Moon a/P/e for small moons are JPL mean equatorial elements (Pluto-centric)."
+    },
+    {
+      "name": "Haumea",
+      "category": "dwarf planet",
+      "semi_major_axis_au": 43.0603,
+      "eccentricity": 0.1944,
+      "longitude_of_perihelion_deg": 2.48,
+      "orbital_period_years": 282.57,
+      "mean_radius_km": 797.6,
+      "mass_kg": 3.952e+21,
+      "known_moons": 2,
+      "moons": [
+        {
+          "name": "Hiʻiaka",
+          "semi_major_axis_km": 49880,
+          "orbital_period_days": 49.462,
+          "eccentricity": 0.0513,
+          "mean_radius_km": 185.0,
+          "mass_kg": 1.6e+19,
+          "notes": "Orbit: Ragozzine & Brown 2009 (AJ 137:4766). Radius = half of 370+/-20 km diameter and mass 1.6+/-0.2e19 kg from Fernandez-Valenzuela et al. 2025 (Nature Communications 16) stellar occultation."
+        },
+        {
+          "name": "Namaka",
+          "semi_major_axis_km": 25657,
+          "orbital_period_days": 18.2783,
+          "eccentricity": 0.249,
+          "mean_radius_km": 75.0,
+          "mass_kg": 1.18e+18,
+          "notes": "Orbit: Ragozzine & Brown 2009; orbit is strongly perturbed (non-Keplerian) by Hi'iaka so e and a vary. Radius = half of 150+/-50 km diameter (Fernandez-Valenzuela et al. 2025, poorly constrained). Mass 1.18+/-0.25e18 kg from Proudfoot et al. 2024 (PSJ 5:69)."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Haumea is a strongly triaxial ellipsoid. mean_radius_km is the volume-equivalent radius computed here from Ortiz et al. 2017 (Nature 550:219) semi-axes 1161 x 852 x 513 km: (1161*852*513)^(1/3) = 797.6 km. A 2026 occultation paper (Proudfoot et al., arXiv:2605.28636, PSJ) gives a smaller volume-equivalent diameter 1544 km (axes 2122x1688x1036 km diameters) -> radius ~772 km; not yet adopted here. JPL's table lists 715 km mean radius (Lockwood et al. 2014) which is an older estimate. Mass 3.952+/-0.011e21 kg from Proudfoot et al. 2024 (PSJ 5:69); this is essentially the system mass (moons are <0.5%). Haumea also has a ring (a ~2285 km, Ortiz et al. 2017)."
+    },
+    {
+      "name": "Makemake",
+      "category": "dwarf planet",
+      "semi_major_axis_au": 45.5709,
+      "eccentricity": 0.1589,
+      "longitude_of_perihelion_deg": 16.39,
+      "orbital_period_years": 307.64,
+      "mean_radius_km": 715.0,
+      "mass_kg": null,
+      "known_moons": 1,
+      "moons": [
+        {
+          "name": "S/2015 (136472) 1 (MK2)",
+          "semi_major_axis_km": null,
+          "orbital_period_days": null,
+          "eccentricity": null,
+          "mean_radius_km": 87.5,
+          "mass_kg": null,
+          "notes": "Discovered 2015 by Parker et al. 2016 (ApJ 825:L9). Orbit not well determined: a preliminary orbit (a = 22250+/-780 km, P = 18.023+/-0.017 d, e ~ 0) exists only as an arXiv preprint (Bamberger 2025, arXiv:2509.05880), so left null. Radius 87.5 km = half of ~175 km diameter assuming 4% albedo (Parker et al. 2016); 175-250 km diameter for 2-4% albedo, so radius is model-dependent. Mass unknown."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius 715+/-7 km: Brown 2013 (ApJ 767:L7), from occultation-derived ellipse 1434 x 1420 km (JPL table lists 714 km mean). Mass left null: no peer-reviewed determination. Published estimates are 3.1e21 kg (Parker et al. 2018, DPS abstract, used in JPL table) and 2.69+/-0.20e21 kg (Bamberger 2025 arXiv preprint, based on the preliminary MK2 orbit)."
+    },
+    {
+      "name": "Eris",
+      "category": "dwarf planet",
+      "semi_major_axis_au": 67.9339,
+      "eccentricity": 0.4382,
+      "longitude_of_perihelion_deg": 186.8,
+      "orbital_period_years": 559.94,
+      "mean_radius_km": 1163.0,
+      "mass_kg": 1.638e+22,
+      "known_moons": 1,
+      "moons": [
+        {
+          "name": "Dysnomia",
+          "semi_major_axis_km": 37273,
+          "orbital_period_days": 15.785899,
+          "eccentricity": 0.0062,
+          "mean_radius_km": 307.5,
+          "mass_kg": 8.2e+19,
+          "notes": "Orbit: Holler et al. 2021 (Icarus 355:114130). Radius = half of 615 (+60/-50) km diameter and mass 8.2+/-5.7e19 kg from Brown & Butler 2023 (PSJ 4:193, ALMA); mass very uncertain."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius 1163+/-6 km from stellar occultation (Sicardy et al. 2011, Nature 478:493). Mass 1.638e22 kg = Eris alone (system mass 1.6466+/-0.0085e22 kg from Holler et al. 2021 minus Dysnomia per Brown & Butler 2023). JPL's table lists older values (radius 1200 km, mass 1.66e22 kg; Brown & Schaller 2007)."
+    },
+    {
+      "name": "Gonggong",
+      "category": "dwarf planet candidate",
+      "semi_major_axis_au": 66.8667,
+      "eccentricity": 0.5043,
+      "longitude_of_perihelion_deg": 183.46,
+      "orbital_period_years": 546.79,
+      "mean_radius_km": 615.0,
+      "mass_kg": 1.75e+21,
+      "known_moons": 1,
+      "moons": [
+        {
+          "name": "Xiangliu",
+          "semi_major_axis_km": 24021,
+          "orbital_period_days": 25.22073,
+          "eccentricity": 0.2908,
+          "mean_radius_km": null,
+          "mass_kg": null,
+          "notes": "Orbit from Kiss et al. 2019 (Icarus 334:3). Two mirror solutions fit: prograde (given: a 24021+/-202 km, P 25.22073 d, e 0.2908) and retrograde (a 24274 km, P 25.22385 d, e 0.2828). Size not well determined: estimated 40-100 km diameter (Kiss et al. 2019) or <200 km (Arakawa et al. 2021), so radius null. Mass unknown."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = half of 1230+/-50 km diameter; mass 1.75+/-0.07e21 kg is the system mass from Xiangliu's orbit (Kiss et al. 2019, Icarus 334:3)."
+    },
+    {
+      "name": "Quaoar",
+      "category": "dwarf planet candidate",
+      "semi_major_axis_au": 43.1562,
+      "eccentricity": 0.0352,
+      "longitude_of_perihelion_deg": 352.13,
+      "orbital_period_years": 283.51,
+      "mean_radius_km": 548.8,
+      "mass_kg": 1.212e+21,
+      "known_moons": 1,
+      "moons": [
+        {
+          "name": "Weywot",
+          "semi_major_axis_km": 13329,
+          "orbital_period_days": 12.42727,
+          "eccentricity": 0.01111,
+          "mean_radius_km": null,
+          "mass_kg": 2.4e+18,
+          "notes": "Orbit and mass: Proudfoot et al. 2025 (PSJ, arXiv:2511.07351); mass 2.4 (+1.2/-1.1)e18 kg is poorly constrained. Size not well determined: 116-172 km diameter (Fernandez-Valenzuela et al. 2026), so radius null."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = half of the 1097.6+/-2.2 km volume-equivalent diameter (Proudfoot et al. 2025, PSJ, arXiv:2511.07351; occultation-derived triaxial shape 1166.6 x 1110.6 x 1020.0 km). Older occultation value: 1110+/-5 km diameter (Braga-Ribas et al. 2013). Mass 1.212+/-0.005e21 kg = Quaoar alone (Proudfoot et al. 2025). Quaoar has rings; a second moon is suggested but unconfirmed, so known_moons = 1."
+    },
+    {
+      "name": "Orcus",
+      "category": "dwarf planet candidate",
+      "semi_major_axis_au": 39.3769,
+      "eccentricity": 0.2205,
+      "longitude_of_perihelion_deg": 341.97,
+      "orbital_period_years": 247.1,
+      "mean_radius_km": 455.0,
+      "mass_kg": 5.478e+20,
+      "known_moons": 1,
+      "moons": [
+        {
+          "name": "Vanth",
+          "semi_major_axis_km": 8999.8,
+          "orbital_period_days": 9.539154,
+          "eccentricity": 0.00091,
+          "mean_radius_km": 221.25,
+          "mass_kg": 8.7e+19,
+          "notes": "Orbit: Grundy et al. 2019 (Icarus 334:62). Radius = half of 442.5+/-10.2 km occultation diameter (Sickafoose et al. 2019, Icarus 319:657). Mass 8.7+/-0.8e19 kg (Brown & Butler 2023, PSJ 4:193)."
+        }
+      ],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = half of 910 (+50/-40) km diameter (Brown & Butler 2018, AJ 156:164). Mass 5.478e20 kg = Orcus alone (system 6.348+/-0.019e20 kg from Grundy et al. 2019 minus Vanth 8.7e19 kg)."
+    },
+    {
+      "name": "Sedna",
+      "category": "dwarf planet candidate",
+      "semi_major_axis_au": 543.7195,
+      "eccentricity": 0.8599,
+      "longitude_of_perihelion_deg": 95.6,
+      "orbital_period_years": 12678.58,
+      "mean_radius_km": null,
+      "mass_kg": null,
+      "known_moons": 0,
+      "moons": [],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Size poorly constrained, so mean_radius_km is null: thermal diameter 906 (+314/-258) km (Lellouch et al. 2013, A&A 557:A60) vs an occultation chord implying diameter >~1025+/-135 km (Rommel et al. 2020). No moons known, so mass unknown. Note: osculating heliocentric a (~544 AU) and period (~12,700 yr) differ greatly from the barycentric values (~506 AU, ~11,400 yr) that are often quoted; for a game, barycentric values are more representative of the long-term orbit."
+    },
+    {
+      "name": "Vesta",
+      "category": "asteroid",
+      "semi_major_axis_au": 2.3614,
+      "eccentricity": 0.0902,
+      "longitude_of_perihelion_deg": 255.17,
+      "orbital_period_years": 3.63,
+      "mean_radius_km": 261.385,
+      "mass_kg": 2.5903e+20,
+      "known_moons": 0,
+      "moons": [],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = half of 522.77 km mean diameter; mass from GM 17.2882844 km^3/s^2 (Park et al. 2025, Nature Astronomy, Dawn) via SBDB, G = 6.67430e-11. Triaxial: 569.24 x 554.48 x 452.66 km."
+    },
+    {
+      "name": "Pallas",
+      "category": "asteroid",
+      "semi_major_axis_au": 2.7696,
+      "eccentricity": 0.2307,
+      "longitude_of_perihelion_deg": 123.86,
+      "orbital_period_years": 4.61,
+      "mean_radius_km": 256.5,
+      "mass_kg": 2.0422e+20,
+      "known_moons": 0,
+      "moons": [],
+      "notes": "Orbit: JPL SBDB osculating heliocentric elements, epoch JD 2461200.5. Radius = half of 513 km diameter (Marsset et al. 2020, Nature Astronomy 4:569); mass from GM 13.63 km^3/s^2 (Vernazza et al. 2021, A&A 654:A56) via SBDB. Shape 568 x 532 x 448 km."
+    }
+  ],
+  "belts": {
+    "asteroid_belt": {
+      "inner_edge_au": 2.06,
+      "outer_edge_au": 3.27,
+      "notes": "Main-belt 'core' bounded by the 4:1 and 2:1 Kirkwood gaps (mean-motion resonances with Jupiter) at 2.06 and 3.27 AU (Wikipedia 'Asteroid belt', based on MPC orbit data). Check via Kepler's 3rd law: 5.2026*(1/4)^(2/3)=2.065 AU, 5.2026*(1/2)^(2/3)=3.277 AU. NASA describes the belt only as 'between Mars and Jupiter'. Popular sources also quote ~2.2-3.2 AU, but I did not find a primary source for that range.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Asteroid_belt",
+        "https://science.nasa.gov/solar-system/asteroids/facts/"
+      ]
+    },
+    "kuiper_belt": {
+      "inner_edge_au": 30,
+      "outer_edge_au": 50,
+      "classical_cold_population_au": [
+        42,
+        47
+      ],
+      "main_belt_resonance_bounds_au": [
+        39.5,
+        48
+      ],
+      "notes": "NASA: inner edge at Neptune's orbit (~30 AU); the inner, main region ends ~50 AU (Kuiper cliff). The classical (non-resonant) KBOs lie mainly between the 3:2 resonance at 39.5 AU and the 2:1 resonance at ~48 AU (de Sanctis et al. 2001, via Wikipedia); the cold classical population lies at 42-47 AU (Jewitt & Delsanti 2006, via Wikipedia).",
+      "sources": [
+        "https://science.nasa.gov/solar-system/kuiper-belt/facts/",
+        "https://en.wikipedia.org/wiki/Kuiper_belt",
+        "https://en.wikipedia.org/wiki/Classical_Kuiper_belt_object"
+      ]
+    }
+  },
+  "sources": [
+    "JPL Small-Body Database API (https://ssd-api.jpl.nasa.gov/sbdb.api, full-prec), queried 2026-10-06: orbital elements a, e, node, peri, period; Ceres/Vesta/Pallas physical params",
+    "JPL Planets physical parameters, dwarf-planet table: https://ssd.jpl.nasa.gov/planets/phys_par.html",
+    "JPL Planetary satellite mean elements (Pluto, PLU060): https://ssd.jpl.nasa.gov/sats/elem/",
+    "JPL Planetary satellite physical parameters: https://ssd.jpl.nasa.gov/sats/phys_par/",
+    "Brozovic & Jacobson 2024, AJ 167:256 (Pluto system orbits and masses)",
+    "Park et al. 2016, Nature 537:515 (Ceres)",
+    "Park et al. 2025, Nature Astronomy, doi:10.1038/s41550-025-02533-7 (Vesta)",
+    "Marsset et al. 2020, Nature Astronomy 4:569 (Pallas)",
+    "Vernazza et al. 2021, A&A 654:A56 (Pallas GM)",
+    "Ortiz et al. 2017, Nature 550:219 (Haumea shape, ring)",
+    "Proudfoot et al. 2024, PSJ 5:69 (Haumea mass, Namaka mass)",
+    "Ragozzine & Brown 2009, AJ 137:4766 (Haumea moon orbits)",
+    "Fernandez-Valenzuela et al. 2025, Nature Communications 16 (Hi'iaka size and mass)",
+    "Brown 2013, ApJ 767:L7 (Makemake size)",
+    "Parker et al. 2016, ApJ 825:L9 (Makemake moon discovery)",
+    "Sicardy et al. 2011, Nature 478:493 (Eris size)",
+    "Holler et al. 2021, Icarus 355:114130 (Dysnomia orbit, Eris system mass)",
+    "Brown & Butler 2023, PSJ 4:193 (Dysnomia and Vanth masses)",
+    "Brown & Butler 2018, AJ 156:164 (Orcus size)",
+    "Kiss et al. 2019, Icarus 334:3 (Gonggong mass, size, Xiangliu orbit)",
+    "Proudfoot et al. 2025, PSJ, arXiv:2511.07351 (Quaoar size/mass, Weywot orbit)",
+    "Grundy et al. 2019, Icarus 334:62 (Orcus-Vanth orbit and system mass)",
+    "Sickafoose et al. 2019, Icarus 319:657 (Vanth occultation size)",
+    "Lellouch et al. 2013, A&A 557:A60 (Sedna thermal size)",
+    "Wikipedia articles (Eris, Dysnomia, Haumea, Moons of Haumea, Makemake, S/2015 (136472) 1, Gonggong, Xiangliu, Quaoar, Weywot, Orcus, Vanth, Sedna, Charon, Asteroid belt, Kuiper belt, Classical Kuiper belt object) used only to locate the cited papers above",
+    "NASA Science Kuiper Belt facts: https://science.nasa.gov/solar-system/kuiper-belt/facts/"
+  ],
+  "notes": "Orbital elements are JPL SBDB osculating heliocentric elements (epoch JD 2461200.5 = 2026-Jun-24 for all except Pluto, JD 2457588.5), rounded to 4 decimals (a, e) and 0.01 deg. longitude_of_perihelion_deg = (node + argument of perihelion) mod 360. orbital_period_years = SBDB period (days)/365.25. Osculating heliocentric values for distant TNOs differ slightly from barycentric ones (substantially for Sedna). Masses derived from GM use G = 6.67430e-11. Where a primary has a moon, the 'mass' of the primary is either primary-only (Eris, Quaoar, Orcus) or system (Haumea, Gonggong) as stated in each body's notes. Moon semi-major axes are relative to the primary (planetocentric). For TNO dwarf planets, size and mass values come from recent papers and carry real uncertainty; check each note. Null means no value could be verified from a peer-reviewed or JPL source."
+}

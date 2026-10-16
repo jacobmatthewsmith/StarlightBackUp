@@ -1,0 +1,156 @@
+{
+  "batch": "featured-stars",
+  "complete": true,
+  "items": [
+    {
+      "name": "Sun",
+      "hip": null,
+      "other_id": null,
+      "hook": "The star that powers nearly all life on Earth.",
+      "story": "The Sun holds about 99.86% of all the mass in the Solar System and is about 109 times wider than Earth. Every second its core fuses roughly 600 billion kilograms of hydrogen into helium. It formed about 4.6 billion years ago from a collapsing cloud of gas and dust.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ]
+    },
+    {
+      "name": "Proxima Centauri",
+      "hip": 70890,
+      "other_id": "Gaia DR3 5853498713190525696",
+      "hook": "Our closest stellar neighbor, a tiny flaring red dwarf.",
+      "story": "Proxima Centauri is the nearest star to Earth after the Sun, just 4.25 light-years away, yet too faint to see without a telescope. This small red dwarf is a flare star that randomly brightens dramatically. It has at least two known planets, including Proxima b, which circles the star every 11.2 days.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Proxima_Centauri"
+      ]
+    },
+    {
+      "name": "Alpha Centauri",
+      "hip": 71683,
+      "other_id": "HIP 71681 (Alpha Centauri B)",
+      "hook": "A three-star system right next door to the Sun.",
+      "story": "Alpha Centauri is a system of three stars: two Sun-like stars, Rigil Kentaurus and Toliman, plus the red dwarf Proxima Centauri. The bright pair look like one star, the third-brightest in the night sky. The pair circle each other every 79 years, at times as far apart as Pluto is from the Sun.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alpha_Centauri"
+      ]
+    },
+    {
+      "name": "Barnard's Star",
+      "hip": 87937,
+      "other_id": "Gaia DR3 4472832130942575872",
+      "hook": "The closest single star in the northern sky.",
+      "story": "At 5.96 light-years away, Barnard's Star is the closest star in the northern celestial hemisphere, but it is too dim to see with the naked eye. For decades, claims of planets here fell apart, until two teams found four small, close-orbiting planets in 2024 and 2025.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Barnard%27s_Star"
+      ]
+    },
+    {
+      "name": "Sirius",
+      "hip": 32349,
+      "other_id": "Gaia DR3 2947050466531873024",
+      "hook": "The brightest star in the night sky has a hidden partner.",
+      "story": "Sirius is the brightest star in our night sky, partly because it is only 8.6 light-years away. It is actually two stars: a bright white star and a faint white dwarf companion, Sirius B, which orbit each other every 50 years. Around the year 66,270, Sirius will become the southern pole star.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sirius"
+      ]
+    },
+    {
+      "name": "Vega",
+      "hip": 91262,
+      "other_id": null,
+      "hook": "Once the North Star, and it will be again.",
+      "story": "Vega was the first star other than the Sun to have its picture and its spectrum photographed. It is just 25 light-years away and served as a standard for measuring star brightness. Thanks to Earth's slow wobble, Vega was the northern pole star around 12,000 BCE and will be again around the year 13,724.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vega"
+      ]
+    },
+    {
+      "name": "Polaris",
+      "hip": 11767,
+      "other_id": "Gaia DR3 576402619921510144",
+      "hook": "The North Star is really three stars in one.",
+      "story": "Polaris sits less than one degree from the north celestial pole, which makes it useful for navigation. It looks like one point of light, but it is a triple star system. Its main star is the closest Cepheid variable, a type of pulsating star astronomers use to measure cosmic distances.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Polaris"
+      ]
+    },
+    {
+      "name": "Betelgeuse",
+      "hip": 27989,
+      "other_id": null,
+      "hook": "A giant red star expected to explode as a supernova.",
+      "story": "Betelgeuse, Orion's red shoulder, is so huge that if it replaced the Sun its surface would swallow the orbits of Mercury, Venus, Earth, and Mars. It is expected to explode as a supernova, likely within 100,000 years. When it does, it will shine about as bright as a half-Moon for over three months.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Betelgeuse"
+      ]
+    },
+    {
+      "name": "Rigel",
+      "hip": 24436,
+      "other_id": "Gaia DR3 3206991473643150464",
+      "hook": "Orion's blazing blue-white supergiant, thousands of times brighter than the Sun.",
+      "story": "Rigel is a blue supergiant in Orion, tens of thousands of times more luminous than the Sun and about 850 light-years away. What looks like one star is a system of at least four. Only seven to nine million years old, Rigel has already burned through its core hydrogen and will likely end as a supernova.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rigel"
+      ]
+    },
+    {
+      "name": "Arcturus",
+      "hip": 69673,
+      "other_id": null,
+      "hook": "An aging red giant and the north's brightest star.",
+      "story": "Arcturus is the brightest star in the northern half of the sky, about 36.7 light-years away. It is roughly as massive as the Sun, but at around 7.1 billion years old it has run out of core hydrogen and swollen to about 25 times the Sun's size, and is about 170 times as luminous.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arcturus"
+      ]
+    },
+    {
+      "name": "Antares",
+      "hip": 80763,
+      "other_id": null,
+      "hook": "The red heart of the Scorpion, with a hidden companion.",
+      "story": "Antares, the \"heart of the scorpion,\" is a red supergiant so large that, placed at the Sun's position, it would reach into the asteroid belt. About 550 light-years away, it looks like one reddish star, but it actually has a fainter, hot companion star.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Antares"
+      ]
+    },
+    {
+      "name": "Deneb",
+      "hip": 102098,
+      "other_id": null,
+      "hook": "A distant supergiant that still shines brightly across thousands of light-years.",
+      "story": "Deneb is a blue supergiant that marks one corner of the Summer Triangle and the head of the Northern Cross. It may be up to 196,000 times as luminous as the Sun. Its distance is uncertain, between 1,400 and 2,600 light-years; if the farther value is right, it is the most distant star this bright in our sky.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deneb"
+      ]
+    },
+    {
+      "name": "Tau Ceti",
+      "hip": 8102,
+      "other_id": "Gaia DR3 2452378776434477184",
+      "hook": "A nearby Sun-like star and a favorite target for SETI.",
+      "story": "Tau Ceti is the closest single G-type star, the same type as the Sun, just under 12 light-years away and visible to the naked eye. It is surrounded by more than ten times as much dust as our Solar System. Its stability and Sun-like nature make it a regular target in the search for alien intelligence.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tau_Ceti"
+      ]
+    },
+    {
+      "name": "TRAPPIST-1",
+      "hip": null,
+      "other_id": "2MASS J23062928-0502285",
+      "hook": "A tiny star with seven Earth-sized worlds.",
+      "story": "TRAPPIST-1 is a cool red dwarf only slightly larger than Jupiter, about 40 light-years away. It hosts seven rocky planets, each orbiting in 1.5 to 19 days. Up to four of them lie at distances where temperatures may allow liquid water and all seven pass in front of the star as seen from Earth.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/TRAPPIST-1"
+      ]
+    },
+    {
+      "name": "61 Cygni",
+      "hip": 104214,
+      "other_id": "HIP 104217 (61 Cygni B)",
+      "hook": "The first star whose distance was ever measured.",
+      "story": "61 Cygni is a pair of orange dwarf stars that orbit each other about every 659 years. In 1838, Friedrich Bessel used it to make the first distance measurement to any star besides the Sun, finding about 10.4 light-years, close to the true 11.4. It moves across the sky faster than any other naked-eye star.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/61_Cygni"
+      ]
+    }
+  ]
+}

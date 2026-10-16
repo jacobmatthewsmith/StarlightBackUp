@@ -1,0 +1,12 @@
+{
+  "name": "starlight",
+  "private": true,
+  "type": "module",
+  "description": "starlight: a galaxy and relativity learning game. Zero npm dependencies (Node 24 built-ins).",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node --test \"eval/*.test.mjs\"",
+    "catalog": "node catalog-build/build.mjs"
+  }
+}

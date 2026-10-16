@@ -1,0 +1,344 @@
+{
+  "planets": [
+    {
+      "name": "Mercury",
+      "semi_major_axis_au": 0.38709927,
+      "eccentricity": 0.20563593,
+      "longitude_of_perihelion_deg": 77.45779628,
+      "orbital_period_days": 87.969,
+      "mass_earth": 0.055273,
+      "mean_radius_km": 2439.7,
+      "known_moons": 0,
+      "known_moons_as_of": "NASA NSSDC Mercury Fact Sheet (updated 11 Jan 2024); no moons"
+    },
+    {
+      "name": "Venus",
+      "semi_major_axis_au": 0.72333566,
+      "eccentricity": 0.00677672,
+      "longitude_of_perihelion_deg": 131.60246718,
+      "orbital_period_days": 224.701,
+      "mass_earth": 0.81499,
+      "mean_radius_km": 6051.8,
+      "known_moons": 0,
+      "known_moons_as_of": "NASA NSSDC Venus Fact Sheet (updated 11 Jan 2024); no moons"
+    },
+    {
+      "name": "Earth",
+      "semi_major_axis_au": 1.00000261,
+      "eccentricity": 0.01671123,
+      "longitude_of_perihelion_deg": 102.93768193,
+      "orbital_period_days": 365.256,
+      "mass_earth": 1.0,
+      "mean_radius_km": 6371.0,
+      "known_moons": 1,
+      "known_moons_as_of": "NASA NSSDC Earth Fact Sheet"
+    },
+    {
+      "name": "Mars",
+      "semi_major_axis_au": 1.52371034,
+      "eccentricity": 0.0933941,
+      "longitude_of_perihelion_deg": 336.05637041,
+      "orbital_period_days": 686.98,
+      "mass_earth": 0.10745,
+      "mean_radius_km": 3389.5,
+      "known_moons": 2,
+      "known_moons_as_of": "JPL SSD Planetary Satellite Discovery Circumstances page (IAU-recognized), retrieved 2026-10-06"
+    },
+    {
+      "name": "Jupiter",
+      "semi_major_axis_au": 5.202887,
+      "eccentricity": 0.04838624,
+      "longitude_of_perihelion_deg": 14.72847983,
+      "orbital_period_days": 4332.589,
+      "mass_earth": 317.83,
+      "mean_radius_km": 69911,
+      "known_moons": 115,
+      "known_moons_as_of": "JPL SSD Planetary Satellite Discovery Circumstances page lists 115 IAU-recognized satellites of Jupiter (retrieved 2026-10-06); science.nasa.gov/jupiter/jupiter-moons (page updated 2026-09-21) also says 115. Exact announcement date of the 101->115 increase not verified. Earlier: IAU/MPC 26 Mar 2026 = 101."
+    },
+    {
+      "name": "Saturn",
+      "semi_major_axis_au": 9.53667594,
+      "eccentricity": 0.05386179,
+      "longitude_of_perihelion_deg": 92.59887831,
+      "orbital_period_days": 10755.699,
+      "mass_earth": 95.161,
+      "mean_radius_km": 58232,
+      "known_moons": 293,
+      "known_moons_as_of": "science.nasa.gov/saturn/moons: '293 confirmed moons ... as of August 2026' (page updated 2026-09-22); matches JPL SSD discovery page (retrieved 2026-10-06). Earlier: 274 (Mar 2025), 285 (IAU/MPC 26 Mar 2026)."
+    },
+    {
+      "name": "Uranus",
+      "semi_major_axis_au": 19.18916464,
+      "eccentricity": 0.04725744,
+      "longitude_of_perihelion_deg": 170.9542763,
+      "orbital_period_days": 30685.4,
+      "mass_earth": 14.536,
+      "mean_radius_km": 25362,
+      "known_moons": 29,
+      "known_moons_as_of": "science.nasa.gov/uranus/moons: '29 officially recognized moons, as of August 2026' (page updated 2026-09-22); 29th = S/2025 U1 (JWST, announced Aug 2025); matches JPL SSD discovery page."
+    },
+    {
+      "name": "Neptune",
+      "semi_major_axis_au": 30.06992276,
+      "eccentricity": 0.00859048,
+      "longitude_of_perihelion_deg": 44.96476227,
+      "orbital_period_days": 60189.018,
+      "mass_earth": 17.148,
+      "mean_radius_km": 24622,
+      "known_moons": 16,
+      "known_moons_as_of": "science.nasa.gov/neptune/moons: '16 officially recognized moons' (page updated 2026-09-21); matches JPL SSD discovery page (retrieved 2026-10-06)."
+    }
+  ],
+  "moons": [
+    {
+      "name": "Moon",
+      "parent": "Earth",
+      "semi_major_axis_km": 384400,
+      "orbital_period_days": 27.322,
+      "eccentricity": 0.0554,
+      "mean_radius_km": 1737.4,
+      "mass_kg": 7.3458e+22,
+      "retrograde": false
+    },
+    {
+      "name": "Phobos",
+      "parent": "Mars",
+      "semi_major_axis_km": 9375,
+      "orbital_period_days": 0.3187,
+      "eccentricity": 0.015,
+      "mean_radius_km": 11.08,
+      "mass_kg": 1.0618e+16,
+      "retrograde": false
+    },
+    {
+      "name": "Deimos",
+      "parent": "Mars",
+      "semi_major_axis_km": 23457,
+      "orbital_period_days": 1.2625,
+      "eccentricity": 0.0,
+      "mean_radius_km": 6.2,
+      "mass_kg": 1441300000000000.0,
+      "retrograde": false
+    },
+    {
+      "name": "Io",
+      "parent": "Jupiter",
+      "semi_major_axis_km": 421800,
+      "orbital_period_days": 1.762732,
+      "eccentricity": 0.004,
+      "mean_radius_km": 1821.49,
+      "mass_kg": 8.9296e+22,
+      "retrograde": false
+    },
+    {
+      "name": "Europa",
+      "parent": "Jupiter",
+      "semi_major_axis_km": 671100,
+      "orbital_period_days": 3.525463,
+      "eccentricity": 0.009,
+      "mean_radius_km": 1560.8,
+      "mass_kg": 4.7986e+22,
+      "retrograde": false
+    },
+    {
+      "name": "Ganymede",
+      "parent": "Jupiter",
+      "semi_major_axis_km": 1070400,
+      "orbital_period_days": 7.155588,
+      "eccentricity": 0.001,
+      "mean_radius_km": 2631.2,
+      "mass_kg": 1.4815e+23,
+      "retrograde": false
+    },
+    {
+      "name": "Callisto",
+      "parent": "Jupiter",
+      "semi_major_axis_km": 1882700,
+      "orbital_period_days": 16.69044,
+      "eccentricity": 0.007,
+      "mean_radius_km": 2410.3,
+      "mass_kg": 1.0757e+23,
+      "retrograde": false
+    },
+    {
+      "name": "Amalthea",
+      "parent": "Jupiter",
+      "semi_major_axis_km": 181400,
+      "orbital_period_days": 0.499918,
+      "eccentricity": 0.003,
+      "mean_radius_km": 83.5,
+      "mass_kg": 2.4656e+18,
+      "retrograde": false
+    },
+    {
+      "name": "Mimas",
+      "parent": "Saturn",
+      "semi_major_axis_km": 186000,
+      "orbital_period_days": 0.942422,
+      "eccentricity": 0.02,
+      "mean_radius_km": 198.2,
+      "mass_kg": 3.7509e+19,
+      "retrograde": false
+    },
+    {
+      "name": "Enceladus",
+      "parent": "Saturn",
+      "semi_major_axis_km": 238400,
+      "orbital_period_days": 1.370218,
+      "eccentricity": 0.005,
+      "mean_radius_km": 252.1,
+      "mass_kg": 1.0803e+20,
+      "retrograde": false
+    },
+    {
+      "name": "Tethys",
+      "parent": "Saturn",
+      "semi_major_axis_km": 295000,
+      "orbital_period_days": 1.887802,
+      "eccentricity": 0.001,
+      "mean_radius_km": 531.1,
+      "mass_kg": 6.175e+20,
+      "retrograde": false
+    },
+    {
+      "name": "Dione",
+      "parent": "Saturn",
+      "semi_major_axis_km": 377700,
+      "orbital_period_days": 2.736916,
+      "eccentricity": 0.002,
+      "mean_radius_km": 561.4,
+      "mass_kg": 1.0955e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Rhea",
+      "parent": "Saturn",
+      "semi_major_axis_km": 527200,
+      "orbital_period_days": 4.517503,
+      "eccentricity": 0.001,
+      "mean_radius_km": 763.5,
+      "mass_kg": 2.3065e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Titan",
+      "parent": "Saturn",
+      "semi_major_axis_km": 1221900,
+      "orbital_period_days": 15.945448,
+      "eccentricity": 0.029,
+      "mean_radius_km": 2574.76,
+      "mass_kg": 1.3452e+23,
+      "retrograde": false
+    },
+    {
+      "name": "Hyperion",
+      "parent": "Saturn",
+      "semi_major_axis_km": 1481500,
+      "orbital_period_days": 21.276658,
+      "eccentricity": 0.105,
+      "mean_radius_km": 135.0,
+      "mass_kg": 5.551e+18,
+      "retrograde": false
+    },
+    {
+      "name": "Iapetus",
+      "parent": "Saturn",
+      "semi_major_axis_km": 3561700,
+      "orbital_period_days": 79.331002,
+      "eccentricity": 0.028,
+      "mean_radius_km": 734.3,
+      "mass_kg": 1.8057e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Miranda",
+      "parent": "Uranus",
+      "semi_major_axis_km": 129846,
+      "orbital_period_days": 1.413479,
+      "eccentricity": 0.001,
+      "mean_radius_km": 235.8,
+      "mass_kg": 6.4426e+19,
+      "retrograde": false
+    },
+    {
+      "name": "Ariel",
+      "parent": "Uranus",
+      "semi_major_axis_km": 190929,
+      "orbital_period_days": 2.520379,
+      "eccentricity": 0.001,
+      "mean_radius_km": 578.9,
+      "mass_kg": 1.2511e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Umbriel",
+      "parent": "Uranus",
+      "semi_major_axis_km": 265986,
+      "orbital_period_days": 4.144177,
+      "eccentricity": 0.004,
+      "mean_radius_km": 584.7,
+      "mass_kg": 1.275e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Titania",
+      "parent": "Uranus",
+      "semi_major_axis_km": 436298,
+      "orbital_period_days": 8.705869,
+      "eccentricity": 0.002,
+      "mean_radius_km": 788.9,
+      "mass_kg": 3.3996e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Oberon",
+      "parent": "Uranus",
+      "semi_major_axis_km": 583511,
+      "orbital_period_days": 13.463237,
+      "eccentricity": 0.002,
+      "mean_radius_km": 761.4,
+      "mass_kg": 3.076e+21,
+      "retrograde": false
+    },
+    {
+      "name": "Triton",
+      "parent": "Neptune",
+      "semi_major_axis_km": 354800,
+      "orbital_period_days": 5.876994,
+      "eccentricity": 0.0,
+      "mean_radius_km": 1352.6,
+      "mass_kg": 2.1403e+22,
+      "retrograde": true
+    },
+    {
+      "name": "Proteus",
+      "parent": "Neptune",
+      "semi_major_axis_km": 117600,
+      "orbital_period_days": 1.122315,
+      "eccentricity": 0.0,
+      "mean_radius_km": 208.0,
+      "mass_kg": null,
+      "retrograde": false
+    },
+    {
+      "name": "Nereid",
+      "parent": "Neptune",
+      "semi_major_axis_km": 5513900,
+      "orbital_period_days": 360.133039,
+      "eccentricity": 0.751,
+      "mean_radius_km": 170.0,
+      "mass_kg": null,
+      "retrograde": false
+    }
+  ],
+  "sources": [
+    "NASA NSSDC Planetary Fact Sheets (per-planet pages, e.g. https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html), retrieved 2026-10-06 — planet mass, volumetric mean radius, sidereal orbit period",
+    "JPL SSD Approximate Positions of the Planets, Table 1 (J2000 mean ecliptic/equinox, valid 1800-2050): https://ssd.jpl.nasa.gov/planets/approx_pos.html — a, e, longitude of perihelion",
+    "JPL SSD Planetary Satellite Mean Elements: https://ssd.jpl.nasa.gov/sats/elem/ — moon a, e, i (for retrograde), sidereal period",
+    "JPL SSD Planetary Satellite Physical Parameters: https://ssd.jpl.nasa.gov/sats/phys_par/ — moon GM and mean radius",
+    "JPL SSD Planetary Satellite Discovery Circumstances: https://ssd.jpl.nasa.gov/sats/discovery.html — IAU-recognized satellite counts (Mars 2, Jupiter 115, Saturn 293, Uranus 29, Neptune 16)",
+    "NASA Science moon pages: https://science.nasa.gov/saturn/moons/, https://science.nasa.gov/jupiter/jupiter-moons/, https://science.nasa.gov/uranus/moons/, https://science.nasa.gov/neptune/moons/ (retrieved 2026-10-06)",
+    "IAU announcement 26 Mar 2026, 'IAU Minor Planet Center Confirms New Moons of Saturn and Jupiter': https://www.iau.org/IAU/IAU/News/Ann2026/MPC-New-Moons-Saturn-Jupiter.aspx (context for count history)"
+  ],
+  "notes": "All data retrieved 2026-10-06. PLANETS: semi_major_axis_au, eccentricity and longitude_of_perihelion_deg are JPL 'approximate positions' Table 1 J2000 values (Earth row = Earth-Moon barycenter). Mars ϖ is listed by JPL as -23.94362959 deg and was normalised to 0-360 (336.05637041). orbital_period_days = NSSDC sidereal orbit period; mean_radius_km = NSSDC volumetric mean radius; mass_earth = NSSDC mass(10^24 kg)/5.9722, rounded to 5 significant figures (NSSDC's printed ratios agree to their precision). MOON COUNTS: The NSSDC overview fact sheet is stale (Jupiter 95, Saturn 274, Uranus 28, last updated Mar 2025); the counts used come from the JPL SSD discovery-circumstances list of IAU-recognized satellites and NASA science.nasa.gov moon pages (updated Sept 2026), which agree. Jupiter's 115 has no explicit 'as of' date on the NASA page; the IAU said 101 on 26 Mar 2026, so the jump to 115 occurred between then and Sept 2026 (exact MPC date not verified). Third-party sites quote other figures (e.g. Saturn 292) — not used. Counts change often; recheck before release. MOONS: a, e, sidereal period from JPL SSD mean elements (epoch 2000-01-01.5, except Nereid: NEP105, epoch 2020-01-01). Mean elements are averages and e is given to only 3 decimals (e.g. Deimos, Triton, Proteus show 0.000 meaning <0.0005). Earth's Moon elements are JPL's DE405/LE405 ecliptic mean values. mass_kg = JPL GM / G with G = 6.67430e-11 m^3 kg^-1 s^-2 (CODATA 2018), 4 significant figures. Uranian moon GMs (URA111) are only ~2-3% precise; Amalthea ~5%; Deimos ~3%. Proteus mass set to null: JPL GM 2.58 ± 2.42 km^3/s^2 (≈94% uncertainty, essentially unconstrained). Nereid mass null: JPL lists GM 0 (unknown). Nereid radius 170 ± 25 km and Hyperion radius (irregular body, 135 ± 4 km) are uncertain mean values; Phobos/Deimos/Amalthea/Hyperion/Proteus are irregular, radius is volumetric mean. retrograde: only Triton (inclination 157.3 deg to Laplace plane) is retrograde among those listed."
+}

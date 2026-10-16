@@ -1,0 +1,500 @@
+[
+  {
+    "name": "Epsilon Indi",
+    "ra_hours": 22.056,
+    "dec_deg": -56.786,
+    "distance_ly": 11.867,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Epsilon Indi A",
+        "mass_msun": 0.782,
+        "spectral_type": "K5V"
+      },
+      {
+        "name": "Epsilon Indi Ba",
+        "mass_msun": 0.0639,
+        "spectral_type": "T1"
+      },
+      {
+        "name": "Epsilon Indi Bb",
+        "mass_msun": 0.0508,
+        "spectral_type": "T6"
+      }
+    ],
+    "age_gyr": "2.5-4.3",
+    "constellation": "Indus",
+    "planets": [
+      {
+        "name": "eps Ind A b",
+        "host": "Epsilon Indi A",
+        "semi_major_axis_au": 15.76,
+        "period_days": 25450.0,
+        "mass_earth": 2065.88,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/eps%20Ind%20A",
+        "caveat": "Directly imaged by JWST (Matthews et al. 2024). Orbit still poorly constrained: archive default (Sanghi et al. 2026) a=15.76 AU, P~69.7 yr; Matthews et al. 2026 gives a=20.9 AU, P=39400 d. Mass 2065.88 Earth masses = ~6.5 Jupiter masses (true mass, not minimum)."
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/eps%20Ind%20A",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Epsilon_Indi"
+    ],
+    "notes": "Distance from Gaia DR3 parallax of A (274.843 mas). The Ba/Bb pair's Gaia parallax (270.66 mas) is less reliable because it is an unresolved binary; the pair is physically bound to A (~1460 AU separation). A mass 0.782+/-0.023 Msun (Lundkvist et al. 2024 via Wikipedia). Ba/Bb dynamical masses 66.92+/-0.36 and 53.25+/-0.29 Jupiter masses (Chen et al. 2022), converted to Msun. Age 3.5 (+0.8/-1.0) Gyr (Chen et al. 2022), given here as the 1-sigma range. Planet radius in the archive (12.7 Re) is a calculated value from a mass-radius relation, so set to null."
+  },
+  {
+    "name": "Tau Ceti",
+    "ra_hours": 1.7345,
+    "dec_deg": -15.937,
+    "distance_ly": 11.912,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Tau Ceti",
+        "mass_msun": 0.8,
+        "spectral_type": "G8V"
+      }
+    ],
+    "age_gyr": "8-10",
+    "constellation": "Cetus",
+    "planets": [
+      {
+        "name": "tau Cet g",
+        "host": "Tau Ceti",
+        "semi_major_axis_au": 0.133,
+        "period_days": 20.0,
+        "mass_earth": 1.75,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/tau%20Cet",
+        "caveat": "Still listed as confirmed in the NASA Exoplanet Archive (Feng et al. 2017), but considered unconfirmed: the signal is close to the detection limit, and Figueira et al. 2025 (ESPRESSO) found no planets down to ~1.7 Earth masses for periods up to 100 d."
+      },
+      {
+        "name": "tau Cet h",
+        "host": "Tau Ceti",
+        "semi_major_axis_au": 0.243,
+        "period_days": 49.41,
+        "mass_earth": 1.83,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/tau%20Cet",
+        "caveat": "Still listed as confirmed in the NASA Exoplanet Archive (Feng et al. 2017), but considered unconfirmed: the signal is close to the detection limit, and Figueira et al. 2025 (ESPRESSO) did not recover it."
+      },
+      {
+        "name": "tau Cet f",
+        "host": "Tau Ceti",
+        "semi_major_axis_au": 1.334,
+        "period_days": 636.13,
+        "mass_earth": 3.93,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/tau%20Cet",
+        "caveat": "Still listed as confirmed in the NASA Exoplanet Archive (Feng et al. 2017), but considered unconfirmed: the signal is below current independent detection limits."
+      }
+    ],
+    "candidates": [
+      {
+        "name": "tau Cet b",
+        "status": "refuted",
+        "note": "2012 candidate (Tuomi et al. 2013), rejected by Feng et al. 2017."
+      },
+      {
+        "name": "tau Cet c",
+        "status": "refuted",
+        "note": "2012 candidate, rejected by Feng et al. 2017."
+      },
+      {
+        "name": "tau Cet d",
+        "status": "refuted",
+        "note": "2012 candidate, rejected by Feng et al. 2017."
+      },
+      {
+        "name": "tau Cet e",
+        "status": "false positive (removed from NASA Exoplanet Archive)",
+        "note": "Proposed by Feng et al. 2017 (~0.54 AU). Figueira et al. 2025 ESPRESSO data do not support it; per Wikipedia the NASA Exoplanet Archive demoted it to false positive in April 2026. It is no longer in the archive's pscomppars table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/tau%20Cet",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Tau_Ceti"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 273.810 mas. Mass 0.800+/-0.008 Msun (Korolik et al. 2023 via Wikipedia); the archive uses 0.783. Age is not well constrained: Wikipedia gives 8-10 Gyr (Tang & Gai 2011) but estimates range from 4.4 to 12 Gyr depending on model; the archive lists 12.12. IMPORTANT: f, g and h are listed as confirmed in the archive, so they are included under planets, but per Wikipedia 'as of 2025 there remains no unambiguous evidence of planets' around Tau Ceti. The game should treat them as doubtful. A debris disk is known. Planet radii are not measured (no transits); archive radii are calculated, so set to null."
+  },
+  {
+    "name": "GJ 1061",
+    "ra_hours": 3.5999,
+    "dec_deg": -44.513,
+    "distance_ly": 11.984,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "GJ 1061",
+        "mass_msun": 0.125,
+        "spectral_type": "M5.5V"
+      }
+    ],
+    "age_gyr": ">7",
+    "constellation": "Horologium",
+    "planets": [
+      {
+        "name": "GJ 1061 b",
+        "host": "GJ 1061",
+        "semi_major_axis_au": 0.021,
+        "period_days": 3.2073,
+        "mass_earth": 1.11,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201061",
+        "caveat": null
+      },
+      {
+        "name": "GJ 1061 c",
+        "host": "GJ 1061",
+        "semi_major_axis_au": 0.0342,
+        "period_days": 6.6821,
+        "mass_earth": 1.81,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201061",
+        "caveat": null
+      },
+      {
+        "name": "GJ 1061 d",
+        "host": "GJ 1061",
+        "semi_major_axis_au": 0.054,
+        "period_days": 13.066,
+        "mass_earth": 1.67,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201061",
+        "caveat": null
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201061",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/GJ_1061"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 272.162 mas. Mass 0.125+/-0.003 Msun per Wikipedia (archive uses 0.12). Age is a lower limit (>7.0+/-0.5 Gyr, Dreizler et al. 2020). Planet masses are TRUE masses from Dreizler et al. 2025 (A&A 698, A114), constrained by planet-planet interactions; the archive marks them 'Mass' rather than 'Msini'. The original 2020 values were minimum masses (1.37, 1.74, 1.64 Me). Radii are not measured (archive radii are calculated), so set to null. c and d are in or near the habitable zone."
+  },
+  {
+    "name": "YZ Ceti",
+    "ra_hours": 1.2085,
+    "dec_deg": -16.999,
+    "distance_ly": 12.122,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "YZ Ceti",
+        "mass_msun": 0.13,
+        "spectral_type": "M4.0Ve"
+      }
+    ],
+    "age_gyr": "4-6",
+    "constellation": "Cetus",
+    "planets": [
+      {
+        "name": "YZ Cet b",
+        "host": "YZ Ceti",
+        "semi_major_axis_au": 0.01634,
+        "period_days": 2.02087,
+        "mass_earth": 0.7,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/YZ%20Cet",
+        "caveat": null
+      },
+      {
+        "name": "YZ Cet c",
+        "host": "YZ Ceti",
+        "semi_major_axis_au": 0.02156,
+        "period_days": 3.05989,
+        "mass_earth": 1.14,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/YZ%20Cet",
+        "caveat": null
+      },
+      {
+        "name": "YZ Cet d",
+        "host": "YZ Ceti",
+        "semi_major_axis_au": 0.02851,
+        "period_days": 4.65626,
+        "mass_earth": 1.09,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/YZ%20Cet",
+        "caveat": null
+      }
+    ],
+    "candidates": [
+      {
+        "name": "YZ Cet e",
+        "status": "unconfirmed",
+        "note": "Candidate at ~1.04 d, ~0.47 Earth masses (Astudillo-Defru et al. 2017); later analyses (Stock et al. 2020) did not support it."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/YZ%20Cet",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/YZ_Ceti"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 269.057 mas (12.12 ly; your 12.11 is within tolerance). Mass 0.130+/-0.013 Msun per Wikipedia (archive uses 0.142). Spectral type M4.0Ve (SIMBAD/Wikipedia); archive lists M4.5V. Age 5.0+/-1.0 Gyr (Astudillo-Defru et al. 2017), given as the 1-sigma range. Planet values from Stock et al. 2020 (archive default). Radii are not measured, so set to null."
+  },
+  {
+    "name": "Luyten's Star (GJ 273)",
+    "ra_hours": 7.4568,
+    "dec_deg": 5.226,
+    "distance_ly": 12.348,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Luyten's Star",
+        "mass_msun": 0.29,
+        "spectral_type": "M3.5V"
+      }
+    ],
+    "age_gyr": ">8",
+    "constellation": "Canis Minor",
+    "planets": [
+      {
+        "name": "GJ 273 b",
+        "host": "Luyten's Star",
+        "semi_major_axis_au": 0.091101,
+        "period_days": 18.6498,
+        "mass_earth": 2.89,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20273",
+        "caveat": null
+      },
+      {
+        "name": "GJ 273 c",
+        "host": "Luyten's Star",
+        "semi_major_axis_au": 0.036467,
+        "period_days": 4.7234,
+        "mass_earth": 1.18,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20273",
+        "caveat": null
+      }
+    ],
+    "candidates": [
+      {
+        "name": "GJ 273 d",
+        "status": "unconfirmed",
+        "note": "~413.9 d, >=10.8 Earth masses (Tuomi et al. 2019 preprint); not in the NASA confirmed table."
+      },
+      {
+        "name": "GJ 273 e",
+        "status": "unconfirmed",
+        "note": "~542 d, >=9.3 Earth masses (Tuomi et al. 2019 preprint); not in the NASA confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20273",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Luyten%27s_Star"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 264.127 mas. The archive's sy_dist for GJ 273 (5.92 pc) is inconsistent with its own parallax (263.26 mas, ~3.80 pc) and should be ignored. Age is a lower limit (Wikipedia: >~8 Gyr). Planet b is in the habitable zone. Planet values from Astudillo-Defru et al. 2017. Radii are not measured, so set to null."
+  },
+  {
+    "name": "Teegarden's Star",
+    "ra_hours": 2.8836,
+    "dec_deg": 16.881,
+    "distance_ly": 12.497,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Teegarden's Star",
+        "mass_msun": 0.097,
+        "spectral_type": "M7.0V"
+      }
+    ],
+    "age_gyr": ">8",
+    "constellation": "Aries",
+    "planets": [
+      {
+        "name": "Teegarden's Star b",
+        "host": "Teegarden's Star",
+        "semi_major_axis_au": 0.0259,
+        "period_days": 4.90634,
+        "mass_earth": 1.16,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Teegarden%27s%20Star",
+        "caveat": null
+      },
+      {
+        "name": "Teegarden's Star c",
+        "host": "Teegarden's Star",
+        "semi_major_axis_au": 0.0455,
+        "period_days": 11.416,
+        "mass_earth": 1.05,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Teegarden%27s%20Star",
+        "caveat": null
+      },
+      {
+        "name": "Teegarden's Star d",
+        "host": "Teegarden's Star",
+        "semi_major_axis_au": 0.0791,
+        "period_days": 26.13,
+        "mass_earth": 0.82,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Teegarden%27s%20Star",
+        "caveat": null
+      }
+    ],
+    "candidates": [
+      {
+        "name": "172-day RV signal",
+        "status": "unconfirmed",
+        "note": "Longer-period signal reported by Dreizler et al. 2024 and left unexplained. A 96-day signal is attributed to stellar rotation."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Teegarden%27s%20Star",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Teegarden%27s_Star"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 260.988 mas. Mass 0.097+/-0.010 Msun (Dreizler et al. 2024). Age is a lower limit (>8 Gyr). Planet values from Dreizler et al. 2024 (archive default). b is in the optimistic habitable zone. Radii are not measured (archive radii are calculated), so set to null."
+  },
+  {
+    "name": "Kapteyn's Star",
+    "ra_hours": 5.1946,
+    "dec_deg": -45.018,
+    "distance_ly": 12.831,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Kapteyn's Star",
+        "mass_msun": 0.281,
+        "spectral_type": "sdM1"
+      }
+    ],
+    "age_gyr": "10-12",
+    "constellation": "Pictor",
+    "planets": [
+      {
+        "name": "Kapteyn c",
+        "host": "Kapteyn's Star",
+        "semi_major_axis_au": 0.311,
+        "period_days": 121.54,
+        "mass_earth": 7.0,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Kapteyn",
+        "caveat": "Still listed as confirmed in the NASA Exoplanet Archive (Anglada-Escude et al. 2014), but strongly disputed: Bortle et al. 2021 (Gaussian-process analysis) found no evidence for planets, and attributed the RV signals to stellar rotation/activity. Wikipedia: 'There is currently no evidence for planets orbiting Kapteyn's Star.' The game should treat it as doubtful."
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Kapteyn b",
+        "status": "refuted / removed from NASA Exoplanet Archive",
+        "note": "Claimed by Anglada-Escude et al. 2014 (P~48.6 d). Robertson et al. 2015 showed the period is 1/3 of the stellar rotation period (likely activity), and Bortle et al. 2021 found no evidence for it. It is no longer in the archive's confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Kapteyn",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Kapteyn%27s_Star"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 254.199 mas. Mass 0.281+/-0.014 Msun. Halo subdwarf (SIMBAD M1VIp; Wikipedia sdM1/M1.5V) with very high proper motion (~8.7 arcsec/yr), so its position drifts noticeably from the J2000 coordinates. Age 11.5 (+0.5/-1.5) Gyr, given as the range 10-12. Kapteyn c is included under planets only because the archive still lists it; scientifically it is regarded as unsupported."
+  },
+  {
+    "name": "Lacaille 8760 (AX Microscopii)",
+    "ra_hours": 21.2876,
+    "dec_deg": -38.867,
+    "distance_ly": 12.947,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Lacaille 8760",
+        "mass_msun": 0.6,
+        "spectral_type": "M0Ve"
+      }
+    ],
+    "age_gyr": "1.9-7.7",
+    "constellation": "Microscopium",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)",
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Lacaille_8760"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 251.912 mas. Mass 0.60 Msun (RECONS via Wikipedia). SIMBAD lists the spectral type as M1V. Age 4.8+/-2.9 Gyr (Boehle et al. 2019), given as the 1-sigma range; poorly constrained. Flare star. No confirmed planets and no published candidates found."
+  },
+  {
+    "name": "SCR 1845-6357",
+    "ra_hours": 18.7515,
+    "dec_deg": -63.963,
+    "distance_ly": 13.064,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "SCR 1845-6357 A",
+        "mass_msun": 0.0753,
+        "spectral_type": "M8.5V"
+      },
+      {
+        "name": "SCR 1845-6357 B",
+        "mass_msun": null,
+        "spectral_type": "T6"
+      }
+    ],
+    "age_gyr": ">1.5",
+    "constellation": "Pavo",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/SCR_1845-6357"
+    ],
+    "notes": "Distance from Gaia DR3 parallax of A (249.665 mas). A mass 0.0753+/-0.0088 Msun (Cifuentes et al. 2020). B is a brown dwarf with mass only constrained to 0.024-0.062 Msun (25-65 Jupiter masses, Vigan et al. 2012), so mass_msun is null; the midpoint, ~0.043 Msun, could serve as a placeholder in the game. B is ~4.5 AU from A. Age is a lower limit (>=1.5 Gyr from B's properties, Vigan et al. 2012). No confirmed planets or candidates found."
+  },
+  {
+    "name": "Kruger 60",
+    "ra_hours": 22.4665,
+    "dec_deg": 57.695,
+    "distance_ly": 13.078,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Kruger 60 A",
+        "mass_msun": 0.271,
+        "spectral_type": "M3V"
+      },
+      {
+        "name": "Kruger 60 B (DO Cephei)",
+        "mass_msun": 0.176,
+        "spectral_type": "M4V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Cepheus",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-tap (basic table: ICRS J2000 position, Gaia DR3 parallax)",
+      "https://en.wikipedia.org/wiki/Kruger_60"
+    ],
+    "notes": "Distance from Gaia parallax of A (249.393 mas, Gaia DR2 value used by SIMBAD), giving 13.078 ly; B's parallax gives 13.048 ly. Your 13.07 is within tolerance. Masses 0.271+/-0.010 and 0.176+/-0.007 Msun (cited by Wikipedia). Binary orbit: P = 45.13 yr, a = 2.45 arcsec (~9.8 AU) (Mann et al. 2019). B is the flare star DO Cephei. No reliable age found, so age_gyr is null. No confirmed planets or candidates found."
+  }
+]

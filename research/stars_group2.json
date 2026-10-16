@@ -1,0 +1,412 @@
+[
+  {
+    "name": "Ross 248",
+    "ra_hours": 23.6986,
+    "dec_deg": 44.177,
+    "distance_ly": 10.31,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Ross 248",
+        "mass_msun": 0.145,
+        "spectral_type": "M6V"
+      }
+    ],
+    "age_gyr": "2.6",
+    "constellation": "Andromeda",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ross_248",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 316.48 mas (SIMBAD). Mass and age (2.6 Gyr) from Mann et al. 2015 via Wikipedia; spectral type M6V cited on Wikipedia (SIMBAD lists M5.0V). M-dwarf ages are poorly constrained, treat 2.6 Gyr as approximate. Not in NASA Exoplanet Archive; no planet claims found."
+  },
+  {
+    "name": "Epsilon Eridani",
+    "ra_hours": 3.5488,
+    "dec_deg": -9.458,
+    "distance_ly": 10.5,
+    "position_corrections": "Distance slightly updated: 10.47 -> 10.50 ly (Gaia DR3 parallax 310.58 mas). Below your 0.1 ly threshold; RA/Dec fine.",
+    "components": [
+      {
+        "name": "Epsilon Eridani",
+        "mass_msun": 0.82,
+        "spectral_type": "K2V"
+      }
+    ],
+    "age_gyr": "0.2-0.8",
+    "constellation": "Eridanus",
+    "planets": [
+      {
+        "name": "eps Eri b (AEgir)",
+        "host": "Epsilon Eridani",
+        "semi_major_axis_au": 3.53,
+        "period_days": 2680.0,
+        "mass_earth": 317.83,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/eps%20Eri"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "eps Eri c",
+        "status": "hypothetical / unconfirmed",
+        "note": "Proposed from clumps in the outer debris disk at ~40-50 AU; brightest clumps later identified as background sources, existence debated. Not in NASA archive."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/overview/eps%20Eri",
+      "https://en.wikipedia.org/wiki/Epsilon_Eridani",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Planet b values are the NASA archive default solution (Thompson et al. 2025, AJ 170, 301): a=3.53 AU, P=2680 d, true mass 1.0 Jupiter mass (=317.8 Earth masses, not minimum, from combined RV+astrometry). Other solutions in archive give ~0.6-0.7 MJ. Detection was long controversial but is now considered confirmed. Age: most estimates 200-800 Myr per Wikipedia; one more recent estimate is 1.1+/-0.1 Gyr; NASA archive lists 0.6 Gyr. Has a well-known debris disk (rings at ~3 AU and ~64 AU). Planet radii set to null: none of these planets transit; the radii in the NASA archive pscomppars table are 'Calculated Value' estimates from a mass-radius relation, not measurements."
+  },
+  {
+    "name": "Lacaille 9352",
+    "ra_hours": 23.0978,
+    "dec_deg": -35.853,
+    "distance_ly": 10.72,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Lacaille 9352 (GJ 887)",
+        "mass_msun": 0.479,
+        "spectral_type": "M0.5V"
+      }
+    ],
+    "age_gyr": "2.9-4.6",
+    "constellation": "Piscis Austrinus",
+    "planets": [
+      {
+        "name": "GJ 887 e",
+        "host": "Lacaille 9352",
+        "semi_major_axis_au": 0.0417,
+        "period_days": 4.4249,
+        "mass_earth": 1.46,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20887"
+      },
+      {
+        "name": "GJ 887 b",
+        "host": "Lacaille 9352",
+        "semi_major_axis_au": 0.0683,
+        "period_days": 9.2619,
+        "mass_earth": 3.9,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20887"
+      },
+      {
+        "name": "GJ 887 c",
+        "host": "Lacaille 9352",
+        "semi_major_axis_au": 0.121,
+        "period_days": 21.784,
+        "mass_earth": 6.5,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20887"
+      },
+      {
+        "name": "GJ 887 d",
+        "host": "Lacaille 9352",
+        "semi_major_axis_au": 0.212,
+        "period_days": 50.77,
+        "mass_earth": 6.1,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20887"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "GJ 887 f",
+        "status": "unconfirmed candidate",
+        "note": "Suspected signal, P~2.22 d, m sin i ~0.47 Earth masses (Hartogh et al. 2026). Not in NASA confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20887",
+      "https://en.wikipedia.org/wiki/Lacaille_9352",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Archive host name is 'GJ 887'. b and c discovered by Jeffers et al. 2020 (Science); d (50.8 d, habitable-zone) was a candidate in 2020 and confirmed with e by Hartogh et al. 2026 (A&A 707, A93), which is the archive default for all four. Mass 0.479 Msun (Pineda 2021, Wikipedia); archive lists 0.495. Age poorly constrained: Wikipedia cites 4.57 Gyr, NASA archive lists 2.9 Gyr. Spectral type M0.5V (Wikipedia) vs M1V (archive) vs M2V (SIMBAD). Planet radii set to null: none of these planets transit; the radii in the NASA archive pscomppars table are 'Calculated Value' estimates from a mass-radius relation, not measurements."
+  },
+  {
+    "name": "Ross 128",
+    "ra_hours": 11.7957,
+    "dec_deg": 0.805,
+    "distance_ly": 11.01,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Ross 128",
+        "mass_msun": 0.176,
+        "spectral_type": "M4V"
+      }
+    ],
+    "age_gyr": "5",
+    "constellation": "Virgo",
+    "planets": [
+      {
+        "name": "Ross 128 b",
+        "host": "Ross 128",
+        "semi_major_axis_au": 0.0496,
+        "period_days": 9.8658,
+        "mass_earth": 1.4,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Ross%20128"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Ross%20128",
+      "https://en.wikipedia.org/wiki/Ross_128",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Planet b discovered 2017 (Bonfils et al. 2018, archive default). Wikipedia mentions a ~1.8 Earth-mass / ~1.6 Earth-radius estimate, but that is model-based; only m sin i = 1.4 is measured. Age ~5 Gyr is approximate (Wikipedia and archive both give ~5). Mass 0.176 Msun per Wikipedia; archive lists 0.168. Planet radii set to null: none of these planets transit; the radii in the NASA archive pscomppars table are 'Calculated Value' estimates from a mass-radius relation, not measurements."
+  },
+  {
+    "name": "EZ Aquarii",
+    "ra_hours": 22.6427,
+    "dec_deg": -15.3,
+    "distance_ly": 11.11,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "EZ Aquarii A (Gl 866 A)",
+        "mass_msun": 0.1187,
+        "spectral_type": "M5V"
+      },
+      {
+        "name": "EZ Aquarii C (Gl 866 C, also called Ab)",
+        "mass_msun": 0.093,
+        "spectral_type": "M (subtype uncertain)"
+      },
+      {
+        "name": "EZ Aquarii B (Gl 866 B)",
+        "mass_msun": 0.1145,
+        "spectral_type": "M (subtype uncertain)"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Aquarius",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/EZ_Aquarii",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from parallax 293.6+/-0.9 mas (Torres 2010 compilation via SIMBAD); no Gaia parallax used, so distance uncertainty ~0.03 ly. Structure: A and C form a 3.79-day spectroscopic binary (~0.03 AU); B orbits the AC pair every ~823 days (~1.2 AU, e~0.44). Masses from Torres et al. 2010 (alternate Popova & Shevchenko 2016: Aa 0.1216, Ab 0.0957). Total ~0.326 Msun. Only A has a published spectral subtype (M5V); B and C are just 'M' dwarfs per RECONS. No age found. No planets or planet claims; Wikipedia notes a circumbinary habitable-zone orbit is dynamically possible."
+  },
+  {
+    "name": "61 Cygni",
+    "ra_hours": 21.115,
+    "dec_deg": 38.749,
+    "distance_ly": 11.4,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "61 Cygni A",
+        "mass_msun": 0.6771,
+        "spectral_type": "K5V"
+      },
+      {
+        "name": "61 Cygni B",
+        "mass_msun": 0.6289,
+        "spectral_type": "K7V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Cygnus",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "61 Cyg (A or B) b",
+        "status": "unconfirmed candidate",
+        "note": "Sanghi et al. 2026 (arXiv preprint, 'Worlds Next Door V') find astrometric anomaly data consistent with a ~8+/-3 Jupiter-mass super-Jupiter at ~8+/-3 AU; host star unknown. Not in NASA archive."
+      },
+      {
+        "name": "van de Kamp / Soviet 1942-1977 claims",
+        "status": "refuted",
+        "note": "Historical astrometric claims of planetary-mass companions (~8-16 MJ, and a 1977 three-planet claim) were disproved by Heintz in 1978."
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/61_Cygni",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax ~286.0 mas. Masses from NEID 2025 (via Wikipedia). Age not well constrained: Kervella et al. 2008 evolutionary models give 6.0-6.1+/-1.0 Gyr (the commonly quoted value), gyrochronology ~2.0 Gyr, chromospheric activity 2.4-3.8 Gyr, kinematics ~10 Gyr. Use '6' if a single number is required, with caveats."
+  },
+  {
+    "name": "Procyon",
+    "ra_hours": 7.655,
+    "dec_deg": 5.225,
+    "distance_ly": 11.46,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Procyon A",
+        "mass_msun": 1.478,
+        "spectral_type": "F5IV-V"
+      },
+      {
+        "name": "Procyon B",
+        "mass_msun": 0.592,
+        "spectral_type": "DQZ (white dwarf)"
+      }
+    ],
+    "age_gyr": "1.87",
+    "constellation": "Canis Minor",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Procyon",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Hipparcos (van Leeuwen 2007) parallax 284.56+/-1.26 mas, so +/-0.05 ly uncertainty. Masses and system age 1.87+/-0.13 Gyr from Bond et al. 2015 (HST astrometry). Procyon B white-dwarf cooling age ~1.37 Gyr (Giammichele 2012). A and B orbit every ~40.8 yr. No planets or planet claims."
+  },
+  {
+    "name": "Struve 2398",
+    "ra_hours": 18.713,
+    "dec_deg": 59.63,
+    "distance_ly": 11.49,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Struve 2398 A (Gl 725 A)",
+        "mass_msun": 0.33,
+        "spectral_type": "M3V"
+      },
+      {
+        "name": "Struve 2398 B (Gl 725 B)",
+        "mass_msun": 0.25,
+        "spectral_type": "M3.5V"
+      }
+    ],
+    "age_gyr": "4-11",
+    "constellation": "Draco",
+    "planets": [
+      {
+        "name": "Gl 725 A b",
+        "host": "Struve 2398 A",
+        "semi_major_axis_au": 0.068,
+        "period_days": 11.2201,
+        "mass_earth": 2.78,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Gl%20725%20A"
+      },
+      {
+        "name": "Gl 725 B c",
+        "host": "Struve 2398 B",
+        "semi_major_axis_au": 0.139,
+        "period_days": 37.9,
+        "mass_earth": 3.4,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Gl%20725%20B"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Gl 725 B b",
+        "status": "unconfirmed candidate",
+        "note": "P=4.765 d, m sin i ~1.5+/-0.4 Earth masses, listed as unconfirmed on Wikipedia. Not in NASA confirmed table."
+      }
+    ],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Gl%20725%20A",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Gl%20725%20B",
+      "https://en.wikipedia.org/wiki/Struve_2398",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Archive host names 'Gl 725 A' / 'Gl 725 B'. A b from Cortes-Zuleta et al. 2025 (A&A 693, A164); B c (habitable-zone super-Earth) from Ould-Elhkim et al. 2026 (A&A 705, A234). Ages from those papers: A 6.2+/-2.3 Gyr, B 8.7+/-2.1 Gyr (range given spans both). NOTE: NASA archive lists sy_dist = 6.84 pc for Gl 725 B, which appears to be an archive error; SIMBAD/Gaia DR3 gives 283.84 mas (3.52 pc) for both stars. Planet radii set to null: none of these planets transit; the radii in the NASA archive pscomppars table are 'Calculated Value' estimates from a mass-radius relation, not measurements."
+  },
+  {
+    "name": "Groombridge 34",
+    "ra_hours": 0.3064,
+    "dec_deg": 44.023,
+    "distance_ly": 11.62,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Groombridge 34 A (GX And, GJ 15 A)",
+        "mass_msun": 0.393,
+        "spectral_type": "M1.4V"
+      },
+      {
+        "name": "Groombridge 34 B (GQ And, GJ 15 B)",
+        "mass_msun": 0.15,
+        "spectral_type": "M4.1V"
+      }
+    ],
+    "age_gyr": "3",
+    "constellation": "Andromeda",
+    "planets": [
+      {
+        "name": "GJ 15 A b",
+        "host": "Groombridge 34 A",
+        "semi_major_axis_au": 0.072,
+        "period_days": 11.4407,
+        "mass_earth": 3.03,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%2015%20A"
+      },
+      {
+        "name": "GJ 15 A c",
+        "host": "Groombridge 34 A",
+        "semi_major_axis_au": 5.4,
+        "period_days": 7600.0,
+        "mass_earth": 36.0,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%2015%20A"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%2015%20A",
+      "https://en.wikipedia.org/wiki/Groombridge_34",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Both planets listed as confirmed in NASA archive (default: Pinamonti et al. 2018). Planet b was announced by Howard et al. 2014 at m sin i ~5.35 Earth masses, then questioned when CARMENES did not detect it; Pinamonti 2018 recovered it at a lower m sin i (3.03). Planet c is poorly constrained (m sin i 36 +25/-18 Earth masses, P ~7600 d / ~21 yr). Age ~3 Gyr is a rough estimate (Wikipedia, ref ApJ 804, 64); archive gives none. Mass A 0.393 (Pineda 2021), B 0.15 (Pinamonti 2018)."
+  },
+  {
+    "name": "DX Cancri",
+    "ra_hours": 8.497,
+    "dec_deg": 26.776,
+    "distance_ly": 11.68,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "DX Cancri",
+        "mass_msun": 0.106,
+        "spectral_type": "M6.5V"
+      }
+    ],
+    "age_gyr": "0.2",
+    "constellation": "Cancer",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://en.wikipedia.org/wiki/DX_Cancri",
+      "https://simbad.cds.unistra.fr/simbad/ (SIMBAD TAP basic table: RA/Dec J2000, parallax)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars + ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 279.25 mas. Mass 0.106+/-0.009 Msun (CARMENES, via Wikipedia). Age 200 Myr assumes membership in the Castor Moving Group, which is itself questioned as a real coeval group, so treat it as uncertain. Not in NASA archive; no planet claims found."
+  }
+]

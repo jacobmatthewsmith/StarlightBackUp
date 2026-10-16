@@ -1,0 +1,400 @@
+[
+  {
+    "name": "Ross 614",
+    "ra_hours": 6.4898,
+    "dec_deg": -2.814,
+    "distance_ly": 13.42,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Ross 614 A",
+        "mass_msun": 0.2228,
+        "spectral_type": "M4.5V"
+      },
+      {
+        "name": "Ross 614 B",
+        "mass_msun": 0.0905,
+        "spectral_type": "M8V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Monoceros",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Ross+614",
+      "https://en.wikipedia.org/wiki/Ross_614",
+      "https://gea.esac.esa.int/archive/ (Gaia DR3 cone search)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR2 parallax 242.97 +/- 0.88 mas (SIMBAD); Gaia DR3 has no parallax for the pair. Mass of A 0.2228 +/- 0.0055 Msun (Gatewood et al. 2003); B = 94.8 MJup (+0.9/-1.4) = ~0.0905 Msun (Feng et al. 2022). At ~95 MJup, B is above the hydrogen-burning limit, so it is a very-low-mass star (M8V), not a brown dwarf, even though some sources call it one. Binary orbital period 16.586 +/- 0.004 yr. A is a flare star. No published age. No planets in the NASA Exoplanet Archive."
+  },
+  {
+    "name": "Wolf 1061",
+    "ra_hours": 16.505,
+    "dec_deg": -12.663,
+    "distance_ly": 14.05,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Wolf 1061",
+        "mass_msun": 0.304,
+        "spectral_type": "M3.5V"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Ophiuchus",
+    "planets": [
+      {
+        "name": "Wolf 1061 b",
+        "host": "Wolf 1061",
+        "semi_major_axis_au": 0.0375,
+        "period_days": 4.8869,
+        "mass_earth": 1.91,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201061"
+      },
+      {
+        "name": "Wolf 1061 c",
+        "host": "Wolf 1061",
+        "semi_major_axis_au": 0.089,
+        "period_days": 17.8719,
+        "mass_earth": 3.41,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201061"
+      },
+      {
+        "name": "Wolf 1061 d",
+        "host": "Wolf 1061",
+        "semi_major_axis_au": 0.47,
+        "period_days": 217.21,
+        "mass_earth": 7.7,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201061"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Wolf+1061",
+      "https://en.wikipedia.org/wiki/Wolf_1061",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201061",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)",
+      "https://ui.adsabs.harvard.edu/abs/2017A&A...602A..88A/abstract"
+    ],
+    "notes": "Also called GJ 628. Distance from Gaia DR3 parallax 232.139 +/- 0.027 mas. Mass 0.304 +/- 0.007 Msun (Pineda et al. 2021). SIMBAD lists the spectral type as M3V; Wikipedia gives M3.5V (Astudillo-Defru et al. 2017). Planet values are the archive defaults (Astudillo-Defru et al. 2017), all minimum masses from radial velocities. The 2015 discovery paper (Wright et al.) gave planet d a 67-day period; the 2017 reanalysis revised it to 217 days. No planets transit, so radii are unknown (the archive's composite radii are mass-radius estimates and are left out here). No published age."
+  },
+  {
+    "name": "Wolf 424",
+    "ra_hours": 12.5548,
+    "dec_deg": 9.021,
+    "distance_ly": 14.37,
+    "position_corrections": "Distance: 14.05 -> 14.37 ly (off by 0.32 ly). Uses the Gaia DR3-based system parallax 227.041 +/- 0.389 mas from Chevalier et al. 2023. RA/Dec are within tolerance.",
+    "components": [
+      {
+        "name": "Wolf 424 A",
+        "mass_msun": 0.1379,
+        "spectral_type": "M5.5V"
+      },
+      {
+        "name": "Wolf 424 B",
+        "mass_msun": 0.1258,
+        "spectral_type": "M6e"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Virgo",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Wolf+424",
+      "https://en.wikipedia.org/wiki/Wolf_424",
+      "https://gea.esac.esa.int/archive/ (Gaia DR3 cone search)",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Close binary with an orbital period of 15.811 +/- 0.007 yr. Masses are dynamical, from Chevalier et al. 2023 (A&A 678, A19). Gaia DR3 gives each component its own parallax, 223.48 and 231.12 mas, but both have high RUWE (13.9 and 6.1), so each one alone is unreliable. That is why SIMBAD's per-component value (223.48 mas, 14.59 ly) differs from the adopted 14.37 ly. Spectral types: SIMBAD gives M5.5V for A; Wikipedia gives dM6e for both. Also known as GJ 473. No published age and no planets."
+  },
+  {
+    "name": "Van Maanen's Star",
+    "ra_hours": 0.8194,
+    "dec_deg": 5.389,
+    "distance_ly": 14.07,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Van Maanen 2 (white dwarf)",
+        "mass_msun": 0.67,
+        "spectral_type": "DZ7.5 (SIMBAD) / DZ8 (Wikipedia)"
+      }
+    ],
+    "age_gyr": "4.1",
+    "constellation": "Pisces",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "van Maanen 2 b (unnamed)",
+        "status": "unconfirmed candidate",
+        "note": "Astrometric candidate reported around 2022 with a mass of 0.4-1.1 MJup (per Wikipedia). Not in the NASA Exoplanet Archive. Earlier imaging ruled out companions of 4 MJup or more within 1,200 AU."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=van+Maanen+2",
+      "https://en.wikipedia.org/wiki/Van_Maanen_2",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Isolated white dwarf (also called Wolf 28 or GJ 35) with metal-polluted atmosphere, a sign that planetary debris has been accreted. Distance from Gaia DR3 parallax 231.78 +/- 0.02 mas. Mass 0.67 +/- 0.02 Msun (Subasavage et al. 2017). Total age 4.1 +/- 1.0 Gyr and cooling age 3.17 +/- 0.29 Gyr (Burleigh et al. 2008)."
+  },
+  {
+    "name": "Gliese 1",
+    "ra_hours": 0.0901,
+    "dec_deg": -37.357,
+    "distance_ly": 14.18,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 1",
+        "mass_msun": 0.33,
+        "spectral_type": "M2V"
+      }
+    ],
+    "age_gyr": "8.27",
+    "constellation": "Sculptor",
+    "planets": [],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+1",
+      "https://en.wikipedia.org/wiki/Gliese_1",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Also called HD 225213. Distance from Gaia DR3 parallax 230.097 +/- 0.036 mas (14.175 ly). Mass 0.33 +/- 0.07 Msun and age 8.27 Gyr both come from Maldonado et al. 2020 (A&A 644, A68). That age is a single model estimate with no quoted uncertainty, so treat it as approximate. Spectral type M2V (Houk & Swift 1982), though published types range from M1.5 to M4. Radial-velocity searches rule out a few-Earth-mass planet in the habitable zone and a Jupiter-mass planet within 1 AU. No planets in the archive."
+  },
+  {
+    "name": "TZ Arietis",
+    "ra_hours": 2.0036,
+    "dec_deg": 13.052,
+    "distance_ly": 14.58,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "TZ Arietis",
+        "mass_msun": 0.14,
+        "spectral_type": "M4.5V"
+      }
+    ],
+    "age_gyr": "4.8",
+    "constellation": "Aries",
+    "planets": [
+      {
+        "name": "TZ Arietis b (NASA archive name: GJ 9066 c)",
+        "host": "TZ Arietis",
+        "semi_major_axis_au": 0.88,
+        "period_days": 771.36,
+        "mass_earth": 66.74,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%209066"
+      }
+    ],
+    "candidates": [
+      {
+        "name": "GJ 9066 b / ~240-day signal",
+        "status": "unconfirmed / not supported",
+        "note": "Feng et al. 2020 reported a second signal of about 240 days. Quirrenbach et al. 2022 (CARMENES) found no evidence for it. It is not in the archive's confirmed table."
+      },
+      {
+        "name": "~2-day signal",
+        "status": "retracted (stellar activity)",
+        "note": "Per Wikipedia, an earlier 2-day candidate turned out to be a spurious chromatic effect tied to the star's rotation."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=TZ+Ari",
+      "https://en.wikipedia.org/wiki/TZ_Arietis",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%209066",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)",
+      "https://ui.adsabs.harvard.edu/abs/2022A&A...663A..48Q/abstract"
+    ],
+    "notes": "The archive lists this star as GJ 9066 (also GJ 83.1 / G 3-33), so a search for 'TZ Ari' finds nothing. The archive's planet 'GJ 9066 c' is the planet the literature calls TZ Ari b. Planet values are the archive default (Quirrenbach et al. 2022): eccentricity ~0.46, minimum mass 66.7 Mearth (~0.21 MJup). The archive's composite radius of 9.6 Rearth is a mass-radius estimate, not a measurement, so radius is left null. Distance from Gaia DR3 parallax 223.73 +/- 0.07 mas. Mass 0.14 Msun and age 4.8 Gyr come from Yee et al. 2017. An empirical age for an M dwarf is quite uncertain. Flare star."
+  },
+  {
+    "name": "Gliese 674",
+    "ra_hours": 17.4778,
+    "dec_deg": -46.895,
+    "distance_ly": 14.85,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 674",
+        "mass_msun": 0.353,
+        "spectral_type": "M3V"
+      }
+    ],
+    "age_gyr": "0.1-1.0",
+    "constellation": "Ara",
+    "planets": [
+      {
+        "name": "GJ 674 b",
+        "host": "Gliese 674",
+        "semi_major_axis_au": 0.039,
+        "period_days": 4.6938,
+        "mass_earth": 11.09,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20674"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+674",
+      "https://en.wikipedia.org/wiki/Gliese_674",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20674",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 219.646 +/- 0.026 mas (14.849 ly). Mass 0.353 +/- 0.008 Msun (Pineda et al. 2021). Age 0.1-1.0 Gyr (Bonfils et al. 2007). Planet values are the archive default (Bonfils et al. 2007). Liebing et al. 2024 refined them to minimum mass 10.95 +/- 0.14 Mearth, P = 4.69502 d, a = 0.03867 AU, e ~0.24. The planet does not transit, so radius is unknown."
+  },
+  {
+    "name": "Gliese 687",
+    "ra_hours": 17.6072,
+    "dec_deg": 68.339,
+    "distance_ly": 14.84,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 687",
+        "mass_msun": 0.4,
+        "spectral_type": "M3.0V (SIMBAD) / M3.5V (Wikipedia)"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Draco",
+    "planets": [
+      {
+        "name": "GJ 687 b",
+        "host": "Gliese 687",
+        "semi_major_axis_au": 0.163,
+        "period_days": 38.142,
+        "mass_earth": 17.2,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20687"
+      },
+      {
+        "name": "GJ 687 c",
+        "host": "Gliese 687",
+        "semi_major_axis_au": 1.165,
+        "period_days": 727.562,
+        "mass_earth": 16.0,
+        "mass_is_minimum": true,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20687"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+687",
+      "https://en.wikipedia.org/wiki/Gliese_687",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20687",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 219.790 +/- 0.021 mas (14.839 ly). Mass 0.40 +/- 0.02 Msun (Feng et al. 2020). Planet b was discovered by Burt et al. 2014; the archive default values for both planets come from Feng et al. 2020. Planet c is poorly constrained: P = 727.6 +/- 12.2 d and minimum mass 16.0 +/- 4.1 Mearth. Both are minimum masses, and neither planet transits. No published age."
+  },
+  {
+    "name": "Gliese 440",
+    "ra_hours": 11.7619,
+    "dec_deg": -64.842,
+    "distance_ly": 15.12,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 440 (LAWD 37, white dwarf)",
+        "mass_msun": 0.56,
+        "spectral_type": "DQ6"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Musca",
+    "planets": [],
+    "candidates": [
+      {
+        "name": "LAWD 37 b (unnamed)",
+        "status": "unconfirmed candidate",
+        "note": "Per Wikipedia, a Hipparcos-Gaia proper-motion anomaly hints at a planet of about 0.44 or 0.60 MJup. Not in the NASA Exoplanet Archive."
+      }
+    ],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+440",
+      "https://en.wikipedia.org/wiki/LAWD_37",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)"
+    ],
+    "notes": "Isolated white dwarf. Distance from Gaia DR3 parallax 215.675 +/- 0.018 mas. Its mass, 0.56 +/- 0.08 Msun, was measured by HST astrometric microlensing during a 2019 event, only the second white dwarf weighed this way after Stein 2051 B. Cooling age is about 1.2 Gyr (per Wikipedia). The progenitor was a B-type star of about 4.4 Msun. Total age is not well constrained in cited sources, so age_gyr is null."
+  },
+  {
+    "name": "Gliese 876",
+    "ra_hours": 22.888,
+    "dec_deg": -14.264,
+    "distance_ly": 15.24,
+    "position_corrections": null,
+    "components": [
+      {
+        "name": "Gliese 876",
+        "mass_msun": 0.346,
+        "spectral_type": "M4V (Wikipedia) / M3.5V (SIMBAD)"
+      }
+    ],
+    "age_gyr": null,
+    "constellation": "Aquarius",
+    "planets": [
+      {
+        "name": "GJ 876 d",
+        "host": "Gliese 876",
+        "semi_major_axis_au": 0.0208,
+        "period_days": 1.93778,
+        "mass_earth": 6.83,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20876"
+      },
+      {
+        "name": "GJ 876 c",
+        "host": "Gliese 876",
+        "semi_major_axis_au": 0.1296,
+        "period_days": 30.0881,
+        "mass_earth": 226.98,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20876"
+      },
+      {
+        "name": "GJ 876 b",
+        "host": "Gliese 876",
+        "semi_major_axis_au": 0.2083,
+        "period_days": 61.1166,
+        "mass_earth": 723.22,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20876"
+      },
+      {
+        "name": "GJ 876 e",
+        "host": "Gliese 876",
+        "semi_major_axis_au": 0.3343,
+        "period_days": 124.26,
+        "mass_earth": 14.6,
+        "mass_is_minimum": false,
+        "radius_earth": null,
+        "source_url": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20876"
+      }
+    ],
+    "candidates": [],
+    "sources": [
+      "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=GJ+876",
+      "https://en.wikipedia.org/wiki/Gliese_876",
+      "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20876",
+      "https://exoplanetarchive.ipac.caltech.edu/TAP/sync (pscomppars/ps tables, queried 2026-10-06)",
+      "https://ui.adsabs.harvard.edu/abs/2010ApJ...719..890R/abstract"
+    ],
+    "notes": "Distance from Gaia DR3 parallax 214.038 +/- 0.036 mas (15.238 ly). Your value of 15.20 is 0.04 ly off, within tolerance. Mass 0.346 +/- 0.007 Msun. Planet values are the archive defaults (Rivera et al. 2010). Those masses are true masses, because the dynamical fit sets the inclination at 59 deg, so mass_is_minimum = false. Wikipedia instead quotes minimum masses from a later fit: b 2.357 MJup, c 0.740 MJup, d 6.68 Mearth, e 16.0 Mearth. Planets c, b and e are in a 1:2:4 Laplace resonance. No planet transits, so radii are unknown. Age is poorly constrained: activity-based estimates span 0.1-9.9 Gyr, though young-disk kinematics suggest under ~5 Gyr. Hence age_gyr is null."
+  }
+]

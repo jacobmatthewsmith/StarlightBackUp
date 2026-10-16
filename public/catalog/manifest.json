@@ -1,0 +1,1512 @@
+{
+  "schema": "starlight.catalog/1",
+  "built": "2026-10-16T01:54:55.309Z",
+  "content": "ACTUAL",
+  "coordinates": {
+    "frame": "heliocentric galactic Cartesian",
+    "units": "light years",
+    "axes": {
+      "x": "toward the Galactic centre (l=0°, b=0°)",
+      "y": "l = 90° (direction of Galactic rotation)",
+      "z": "north Galactic pole"
+    },
+    "epoch": "Gaia DR3 positions are epoch J2016.0; research positions J2000 (sub-arcminute differences are invisible at map scale)"
+  },
+  "sources": {
+    "gaia": {
+      "title": "Gaia Data Release 3 (gaiadr3.gaia_source + gaiadr3.hipparcos2_best_neighbour)",
+      "release": "Gaia DR3 (2022-06-13)",
+      "citation": "Gaia Collaboration, Vallenari et al. 2023, A&A 674, A1",
+      "url": "https://gea.esac.esa.int/archive/",
+      "query": "SELECT g.source_id, g.ra, g.dec, g.l, g.b, g.parallax, g.parallax_error, g.parallax_over_error, g.ruwe, g.phot_g_mean_mag, g.bp_rp, g.teff_gspphot, h.original_ext_source_id AS hip FROM gaiadr3.gaia_source AS g LEFT OUTER JOIN gaiadr3.hipparcos2_best_neighbour AS h ON h.source_id = g.source_id WHERE (g.parallax > 32.6 OR g.phot_g_mean_mag < 6.5) AND g.parallax_over_error > 10",
+      "selection": "Union of (a) every Gaia DR3 source with parallax > 32.6 mas (within ~30.7 pc / ~100 ly, matching Explore's 100 ly view) and (b) every source brighter than G = 6.5 (roughly naked-eye), both restricted to parallax_over_error > 10.",
+      "distance": "distance = 1 / parallax. With fractional parallax error below 10%, simple inversion is a good estimator (bias well under the quoted uncertainty). Uncertainty propagated as σd ≈ d · σϖ/ϖ. RUWE > 1.4 is flagged as a less reliable astrometric solution."
+    },
+    "iauNames": {
+      "title": "IAU Catalog of Star Names (WGSN), maintained list",
+      "url": "https://www.pas.rochester.edu/~emamajek/WGSN/IAU-CSN.txt",
+      "citation": "IAU Working Group on Star Names"
+    },
+    "openngc": {
+      "title": "OpenNGC (Messier identifications, types, positions)",
+      "url": "https://github.com/mattiaverga/OpenNGC",
+      "citation": "Verga, M. OpenNGC, CC-BY-SA-4.0"
+    },
+    "hunt2023": {
+      "title": "Hunt & Reffert 2023 open-cluster catalogue (VizieR J/A+A/673/A114)",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/673/A114",
+      "citation": "Hunt, E. L. & Reffert, S. 2023, A&A 673, A114"
+    },
+    "hipparcos": {
+      "title": "Hipparcos, the New Reduction (VizieR I/311/hip2)",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/311",
+      "citation": "van Leeuwen, F. 2007, A&A 474, 653",
+      "selection": "Bright-star supplement: Hp < 6.5 and parallax > 10 × its error, added only where the Gaia DR3 sample has no counterpart (by HIP cross-match, then by position and distance). Gaia DR3 lacks reliable parallaxes for the very brightest stars (G ≲ 3), e.g. Vega, Betelgeuse, Rigel."
+    },
+    "baumgardt": {
+      "title": "Fundamental parameters of Galactic globular clusters (orbits table)",
+      "url": "https://people.smp.uq.edu.au/HolgerBaumgardt/globular/",
+      "citation": "Baumgardt, H. & Vasiliev, E. 2021, MNRAS 505, 5957 (distances)"
+    },
+    "simbad": {
+      "title": "SIMBAD astronomical database (identifier resolution only)",
+      "url": "https://simbad.cds.unistra.fr/",
+      "citation": "Wenger et al. 2000, A&AS 143, 9"
+    },
+    "research": {
+      "title": "starlight research batches (nearby systems, Solar System, Messier nebulae, featured stories)",
+      "url": "research/ in this repository",
+      "citation": "Bounded AI-assisted research with per-item source URLs"
+    },
+    "constellations": {
+      "title": "IAU constellation boundaries (Delporte 1930), as tabulated for B1875.0",
+      "citation": "Roman, N. G. 1987, PASP 99, 695 (CDS VI/42)",
+      "url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/VI/42"
+    },
+    "colourSequence": {
+      "title": "A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence",
+      "citation": "Pecaut & Mamajek 2013, ApJS 208, 9 (table version used is cached)",
+      "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+    },
+    "blackbodyColour": {
+      "title": "What color is a blackbody? (sRGB, CIE 1964 10° observer)",
+      "citation": "Charity, M. 2001, vendian.org",
+      "url": "http://www.vendian.org/mncharity/dir3/blackbody/"
+    },
+    "exoplanets": {
+      "title": "NASA Exoplanet Archive, Planetary Systems Composite Parameters (confirmed planets)",
+      "citation": "NASA Exoplanet Science Institute (2026)",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/"
+    },
+    "tess": {
+      "title": "NASA Exoplanet Archive, TESS Objects of Interest (planet candidates, disposition PC/APC)",
+      "citation": "NASA Exoplanet Science Institute (2026)",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/"
+    },
+    "gaiaAp": {
+      "title": "Gaia DR3 astrophysical parameters (FLAME masses; GSP-Spec metallicity, best-quality flags only)",
+      "citation": "Creevey et al. 2023; Recio-Blanco et al. 2023, A&A 674",
+      "url": "https://gea.esac.esa.int/archive/"
+    }
+  },
+  "selection": "Union of (a) every Gaia DR3 source with parallax > 32.6 mas (within ~30.7 pc / ~100 ly, matching Explore's 100 ly view) and (b) every source brighter than G = 6.5 (roughly naked-eye), both restricted to parallax_over_error > 10.",
+  "coverage": "This is a ~16,000-object sample, not a census or uniform map of the Milky Way: a complete-ish sphere ~100 ly around the Sun plus naked-eye-bright stars out to a few thousand light years, and Milky Way Messier objects. Positions are actual; nothing is redistributed. The faint galaxy glow in the map is procedural and illustrative.",
+  "counts": {
+    "countedActualObjects": 22138,
+    "byType": {
+      "star": 22064,
+      "star system": 5,
+      "supernova remnant": 1,
+      "globular cluster": 30,
+      "open cluster": 27,
+      "emission nebula / H II region": 5,
+      "emission nebula / H II region (with reflection nebula component)": 1,
+      "planetary nebula": 4,
+      "reflection nebula": 1
+    },
+    "bySource": {
+      "gaia": 21075,
+      "hipparcos": 988,
+      "research": 18,
+      "baumgardt": 30,
+      "hunt2023": 27
+    },
+    "gaiaRowsDownloaded": 21075,
+    "gaiaDuplicatesDropped": 0,
+    "hipparcosBrightStarsAdded": 988,
+    "hipparcosSkippedAsGaiaDuplicates": 439,
+    "nearbySystemsMatchedToGaia": 44,
+    "nearbySystemsWithoutGaiaMatch": [
+      "Luhman 16",
+      "WISE 0855-0714",
+      "EZ Aquarii",
+      "Kruger 60",
+      "Ross 614"
+    ],
+    "messierMilkyWayPlaced": 67,
+    "messierExternalOrDisputed": 40,
+    "messierWithoutDistance": [
+      "M24",
+      "M40",
+      "M73"
+    ],
+    "skyOnly": 46,
+    "featured": 30,
+    "featuredUnmatched": []
+  },
+  "quality": {
+    "parallaxOverErrorMin": 10,
+    "ruweAbove1_4": 5598,
+    "missingRates": {
+      "name": 0.9802,
+      "gaia_bp_rp": 0.0174,
+      "gaia_teff_gspphot": 0.5509
+    },
+    "approximatePositions": 6
+  },
+  "matching": {
+    "method": "Nearby researched systems matched to Gaia DR3 / Hipparcos sources within 3′ on the sky and 10% in distance; matched Gaia sources become the system's components (counted once, as stars); systems with no Gaia match (very bright stars Gaia doesn't measure well) are counted from the research data.",
+    "log": [
+      {
+        "system": "Proxima Centauri",
+        "catalogComponents": [
+          "Gaia DR3 5853498713190525696"
+        ]
+      },
+      {
+        "system": "Alpha Centauri",
+        "catalogComponents": [
+          "HIP 71681",
+          "HIP 71683"
+        ]
+      },
+      {
+        "system": "Barnard's Star",
+        "catalogComponents": [
+          "Gaia DR3 4472832130942575872"
+        ]
+      },
+      {
+        "system": "Luhman 16",
+        "catalogComponents": []
+      },
+      {
+        "system": "WISE 0855-0714",
+        "catalogComponents": []
+      },
+      {
+        "system": "Wolf 359",
+        "catalogComponents": [
+          "Gaia DR3 3864972938605115520"
+        ]
+      },
+      {
+        "system": "Lalande 21185",
+        "catalogComponents": [
+          "Gaia DR3 762815470562110464"
+        ]
+      },
+      {
+        "system": "Sirius",
+        "catalogComponents": [
+          "Gaia DR3 2947050466531873024",
+          "HIP 32349"
+        ]
+      },
+      {
+        "system": "Luyten 726-8",
+        "catalogComponents": [
+          "Gaia DR3 5140693571158739840",
+          "Gaia DR3 5140693571158946048"
+        ]
+      },
+      {
+        "system": "Ross 154",
+        "catalogComponents": [
+          "Gaia DR3 4075141768785646848"
+        ]
+      },
+      {
+        "system": "Ross 248",
+        "catalogComponents": [
+          "Gaia DR3 1926461164913660160"
+        ]
+      },
+      {
+        "system": "Epsilon Eridani",
+        "catalogComponents": [
+          "Gaia DR3 5164707970261890560"
+        ]
+      },
+      {
+        "system": "Lacaille 9352",
+        "catalogComponents": [
+          "Gaia DR3 6553614253923452800"
+        ]
+      },
+      {
+        "system": "Ross 128",
+        "catalogComponents": [
+          "Gaia DR3 3796072592206250624"
+        ]
+      },
+      {
+        "system": "EZ Aquarii",
+        "catalogComponents": []
+      },
+      {
+        "system": "61 Cygni",
+        "catalogComponents": [
+          "Gaia DR3 1872046574983497216",
+          "Gaia DR3 1872046609345556480"
+        ]
+      },
+      {
+        "system": "Procyon",
+        "catalogComponents": [
+          "HIP 37279"
+        ]
+      },
+      {
+        "system": "Struve 2398",
+        "catalogComponents": [
+          "Gaia DR3 2154880616774131712",
+          "Gaia DR3 2154880616774131840"
+        ]
+      },
+      {
+        "system": "Groombridge 34",
+        "catalogComponents": [
+          "Gaia DR3 385334230892516480",
+          "Gaia DR3 385334196532776576"
+        ]
+      },
+      {
+        "system": "DX Cancri",
+        "catalogComponents": [
+          "Gaia DR3 703790044252850688"
+        ]
+      },
+      {
+        "system": "Epsilon Indi",
+        "catalogComponents": [
+          "Gaia DR3 6412595290592307840"
+        ]
+      },
+      {
+        "system": "Tau Ceti",
+        "catalogComponents": [
+          "Gaia DR3 2452378776434477184"
+        ]
+      },
+      {
+        "system": "GJ 1061",
+        "catalogComponents": [
+          "Gaia DR3 4848140361962951552"
+        ]
+      },
+      {
+        "system": "YZ Ceti",
+        "catalogComponents": [
+          "Gaia DR3 2358524597030794112"
+        ]
+      },
+      {
+        "system": "Luyten's Star",
+        "catalogComponents": [
+          "Gaia DR3 3139847906307949696"
+        ]
+      },
+      {
+        "system": "Teegarden's Star",
+        "catalogComponents": [
+          "Gaia DR3 35227046884571776"
+        ]
+      },
+      {
+        "system": "Kapteyn's Star",
+        "catalogComponents": [
+          "Gaia DR3 4810594479418041856"
+        ]
+      },
+      {
+        "system": "Lacaille 8760",
+        "catalogComponents": [
+          "Gaia DR3 6583272171336048640"
+        ]
+      },
+      {
+        "system": "SCR 1845-6357",
+        "catalogComponents": [
+          "Gaia DR3 6439125097427143808"
+        ]
+      },
+      {
+        "system": "Kruger 60",
+        "catalogComponents": []
+      },
+      {
+        "system": "Ross 614",
+        "catalogComponents": []
+      },
+      {
+        "system": "Wolf 1061",
+        "catalogComponents": [
+          "Gaia DR3 4330690742322011520"
+        ]
+      },
+      {
+        "system": "Wolf 424",
+        "catalogComponents": [
+          "Gaia DR3 3902874650602495232",
+          "Gaia DR3 3902874650601954816"
+        ]
+      },
+      {
+        "system": "Van Maanen's Star",
+        "catalogComponents": [
+          "Gaia DR3 2552928187080872832"
+        ]
+      },
+      {
+        "system": "Gliese 1",
+        "catalogComponents": [
+          "Gaia DR3 2306965202564744064"
+        ]
+      },
+      {
+        "system": "TZ Arietis",
+        "catalogComponents": [
+          "Gaia DR3 76868614540049408"
+        ]
+      },
+      {
+        "system": "Gliese 674",
+        "catalogComponents": [
+          "Gaia DR3 5951824121022278144"
+        ]
+      },
+      {
+        "system": "Gliese 687",
+        "catalogComponents": [
+          "Gaia DR3 1637645127018395776"
+        ]
+      },
+      {
+        "system": "Gliese 440",
+        "catalogComponents": [
+          "Gaia DR3 5332606522595645952"
+        ]
+      },
+      {
+        "system": "Gliese 876",
+        "catalogComponents": [
+          "Gaia DR3 2603090003484152064"
+        ]
+      },
+      {
+        "system": "LHS 288",
+        "catalogComponents": [
+          "Gaia DR3 5254061535106490112"
+        ]
+      },
+      {
+        "system": "GJ 1002",
+        "catalogComponents": [
+          "Gaia DR3 2441630500517079808"
+        ]
+      },
+      {
+        "system": "Gliese 412",
+        "catalogComponents": [
+          "Gaia DR3 778947608243864320",
+          "Gaia DR3 778947814402602752"
+        ]
+      },
+      {
+        "system": "Groombridge 1618",
+        "catalogComponents": [
+          "Gaia DR3 823773494718931968"
+        ]
+      },
+      {
+        "system": "AD Leonis",
+        "catalogComponents": [
+          "Gaia DR3 625453654702751872"
+        ]
+      },
+      {
+        "system": "Gliese 832",
+        "catalogComponents": [
+          "Gaia DR3 6562924609150908416"
+        ]
+      },
+      {
+        "system": "40 Eridani",
+        "catalogComponents": [
+          "Gaia DR3 3195919254111315712",
+          "Gaia DR3 3195919528989223040",
+          "Gaia DR3 3195919254111314816"
+        ]
+      },
+      {
+        "system": "70 Ophiuchi",
+        "catalogComponents": [
+          "Gaia DR3 4468557611977674496",
+          "Gaia DR3 4468557611984384512"
+        ]
+      },
+      {
+        "system": "Altair",
+        "catalogComponents": [
+          "HIP 97649"
+        ]
+      }
+    ]
+  },
+  "enrichment": {
+    "constellation": 22132,
+    "colour": 21018,
+    "colourFrom": {
+      "bp_rp": 20031,
+      "b_v": 987
+    },
+    "mass": {
+      "flame": 6152,
+      "exoplanetArchive": 227,
+      "research": 13
+    },
+    "composition": {
+      "gaia": 4965,
+      "exoplanetArchive": 170
+    },
+    "planetsConfirmedHosts": 328,
+    "planetsConfirmed": 547,
+    "planetsUnmatched": [
+      "TOI-700",
+      "TOI-431",
+      "TOI-1801",
+      "LP 890-9",
+      "HD 110067",
+      "HD 8326",
+      "TOI-4559",
+      "GJ 9689",
+      "HIP 86221",
+      "TOI-1411",
+      "HD 37124",
+      "TOI-2120",
+      "HD 22781",
+      "HD 97037",
+      "HD 100508",
+      "HIP 5763",
+      "HD 73583",
+      "CFBDSIR J145829+101343",
+      "HD 64114",
+      "HD 98736",
+      "HD 29985",
+      "HD 29021",
+      "K2-239",
+      "TOI-1693",
+      "HD 89307",
+      "HD 185283",
+      "HD 50554",
+      "HD 162020",
+      "HD 117207",
+      "HIP 71135",
+      "CWISEP J193518.59-154620.3",
+      "TOI-6002",
+      "TOI-5734",
+      "HD 63765",
+      "HD 130322",
+      "TOI-406",
+      "TOI-6086",
+      "WISEP J121756.91+162640.2 A"
+    ],
+    "potential": {
+      "tess": 23,
+      "research": 19
+    },
+    "gspspecRejected": 7426,
+    "colourClasses": [
+      {
+        "name": "blue",
+        "min": 30000,
+        "ref": 35000,
+        "classes": "O"
+      },
+      {
+        "name": "blue-white",
+        "min": 20000,
+        "ref": 24000,
+        "classes": "early B"
+      },
+      {
+        "name": "bluish white",
+        "min": 10000,
+        "ref": 13000,
+        "classes": "late B"
+      },
+      {
+        "name": "white",
+        "min": 7500,
+        "ref": 8600,
+        "classes": "A"
+      },
+      {
+        "name": "yellow-white",
+        "min": 6000,
+        "ref": 6700,
+        "classes": "F"
+      },
+      {
+        "name": "yellow",
+        "min": 5200,
+        "ref": 5700,
+        "classes": "G"
+      },
+      {
+        "name": "light orange",
+        "min": 4600,
+        "ref": 4900,
+        "classes": "early K"
+      },
+      {
+        "name": "orange",
+        "min": 3900,
+        "ref": 4200,
+        "classes": "late K"
+      },
+      {
+        "name": "orange-red",
+        "min": 3300,
+        "ref": 3600,
+        "classes": "early M"
+      },
+      {
+        "name": "red",
+        "min": 2700,
+        "ref": 3000,
+        "classes": "mid-to-late M"
+      },
+      {
+        "name": "deep red",
+        "min": 2000,
+        "ref": 2300,
+        "classes": "late M / L brown dwarfs"
+      },
+      {
+        "name": "dark red (glows mostly in infrared)",
+        "min": 0,
+        "ref": 1500,
+        "classes": "L / T / Y brown dwarfs"
+      }
+    ],
+    "zodiac": [
+      "Ari",
+      "Tau",
+      "Gem",
+      "Cnc",
+      "Leo",
+      "Vir",
+      "Lib",
+      "Sco",
+      "Sgr",
+      "Cap",
+      "Aqr",
+      "Psc"
+    ],
+    "colourMethod": "Colour temperature from the measured Gaia BP−RP (or Hipparcos B−V) colour, interpolated on the Pecaut & Mamajek dwarf sequence (no extrapolation); displayed colour is a blackbody at that temperature (Charity 2001, CIE 1964 10°). Names follow conventional colour descriptions of the spectral classes.",
+    "massMethod": "Gaia DR3 FLAME mass; else the NASA Exoplanet Archive host-star mass; else researched masses for single-star nearby systems; otherwise unknown. No colour-based estimates.",
+    "compositionMethod": "Gaia DR3 GSP-Spec [M/H] with best-quality flags only (first 13 flags zero); else NASA Exoplanet Archive host metallicity; otherwise unknown."
+  },
+  "chunks": [
+    {
+      "i": 0,
+      "path": "chunks/c000.json",
+      "count": 693,
+      "min": [
+        -25251.01,
+        -27296.42,
+        -20911.11
+      ],
+      "max": [
+        4.87,
+        -633.42,
+        1851.6
+      ]
+    },
+    {
+      "i": 1,
+      "path": "chunks/c001.json",
+      "count": 693,
+      "min": [
+        -6145.95,
+        -632.79,
+        -1504.12
+      ],
+      "max": [
+        5.12,
+        -314.8,
+        1234.34
+      ]
+    },
+    {
+      "i": 2,
+      "path": "chunks/c002.json",
+      "count": 693,
+      "min": [
+        -5979.85,
+        -314.53,
+        -1628.01
+      ],
+      "max": [
+        -140.12,
+        -74.81,
+        1484.18
+      ]
+    },
+    {
+      "i": 3,
+      "path": "chunks/c003.json",
+      "count": 693,
+      "min": [
+        -139.8,
+        -313.68,
+        -1264.94
+      ],
+      "max": [
+        5.11,
+        -74.57,
+        1763.58
+      ]
+    },
+    {
+      "i": 4,
+      "path": "chunks/c004.json",
+      "count": 693,
+      "min": [
+        -1000.77,
+        -74.5,
+        -1667.84
+      ],
+      "max": [
+        5.04,
+        -2.95,
+        -43.14
+      ]
+    },
+    {
+      "i": 5,
+      "path": "chunks/c005.json",
+      "count": 693,
+      "min": [
+        -1025.94,
+        -74.55,
+        -43.07
+      ],
+      "max": [
+        5.1,
+        -3.03,
+        -2.04
+      ]
+    },
+    {
+      "i": 6,
+      "path": "chunks/c006.json",
+      "count": 693,
+      "min": [
+        -1667.38,
+        -74.09,
+        -2.02
+      ],
+      "max": [
+        -41.08,
+        -2.99,
+        1150.24
+      ]
+    },
+    {
+      "i": 7,
+      "path": "chunks/c007.json",
+      "count": 694,
+      "min": [
+        -40.95,
+        -74.37,
+        -1.54
+      ],
+      "max": [
+        5.01,
+        -3.02,
+        610.87
+      ]
+    },
+    {
+      "i": 8,
+      "path": "chunks/c008.json",
+      "count": 693,
+      "min": [
+        -1962.03,
+        -2.89,
+        -1222.94
+      ],
+      "max": [
+        -43.27,
+        67.23,
+        -0.82
+      ]
+    },
+    {
+      "i": 9,
+      "path": "chunks/c009.json",
+      "count": 693,
+      "min": [
+        -43.25,
+        -2.78,
+        -689.85
+      ],
+      "max": [
+        5.13,
+        67.17,
+        -0.89
+      ]
+    },
+    {
+      "i": 10,
+      "path": "chunks/c010.json",
+      "count": 693,
+      "min": [
+        -1643.42,
+        -2.71,
+        -0.79
+      ],
+      "max": [
+        -39.38,
+        67.29,
+        1324.25
+      ]
+    },
+    {
+      "i": 11,
+      "path": "chunks/c011.json",
+      "count": 694,
+      "min": [
+        -39.33,
+        -2.94,
+        -0.79
+      ],
+      "max": [
+        5.12,
+        67.39,
+        614.73
+      ]
+    },
+    {
+      "i": 12,
+      "path": "chunks/c012.json",
+      "count": 693,
+      "min": [
+        -4560.78,
+        67.4,
+        -1655.8
+      ],
+      "max": [
+        -116.47,
+        257.02,
+        1524.84
+      ]
+    },
+    {
+      "i": 13,
+      "path": "chunks/c013.json",
+      "count": 693,
+      "min": [
+        -116.27,
+        67.44,
+        -881.69
+      ],
+      "max": [
+        5.03,
+        256.98,
+        1062.21
+      ]
+    },
+    {
+      "i": 14,
+      "path": "chunks/c014.json",
+      "count": 693,
+      "min": [
+        -5988.85,
+        257.1,
+        -1405.45
+      ],
+      "max": [
+        4.49,
+        540.08,
+        1544.08
+      ]
+    },
+    {
+      "i": 15,
+      "path": "chunks/c015.json",
+      "count": 694,
+      "min": [
+        -8712.94,
+        540.93,
+        -1784.24
+      ],
+      "max": [
+        2.49,
+        13284.61,
+        2217.02
+      ]
+    },
+    {
+      "i": 16,
+      "path": "chunks/c016.json",
+      "count": 693,
+      "min": [
+        5.18,
+        -1794.14,
+        -1725.63
+      ],
+      "max": [
+        81.1,
+        -40.25,
+        -0.15
+      ]
+    },
+    {
+      "i": 17,
+      "path": "chunks/c017.json",
+      "count": 693,
+      "min": [
+        5.16,
+        -40.17,
+        -547.88
+      ],
+      "max": [
+        81.5,
+        0.01,
+        -0.14
+      ]
+    },
+    {
+      "i": 18,
+      "path": "chunks/c018.json",
+      "count": 693,
+      "min": [
+        5.16,
+        0.05,
+        -695.48
+      ],
+      "max": [
+        81.58,
+        47,
+        -0.53
+      ]
+    },
+    {
+      "i": 19,
+      "path": "chunks/c019.json",
+      "count": 694,
+      "min": [
+        5.2,
+        47.01,
+        -1862.83
+      ],
+      "max": [
+        81.57,
+        5143.41,
+        -0.11
+      ]
+    },
+    {
+      "i": 20,
+      "path": "chunks/c020.json",
+      "count": 693,
+      "min": [
+        81.58,
+        -2251.22,
+        -1773.43
+      ],
+      "max": [
+        292.98,
+        -2.39,
+        -0.2
+      ]
+    },
+    {
+      "i": 21,
+      "path": "chunks/c021.json",
+      "count": 693,
+      "min": [
+        81.69,
+        -2.25,
+        -1789.23
+      ],
+      "max": [
+        292.59,
+        2826.48,
+        -0.12
+      ]
+    },
+    {
+      "i": 22,
+      "path": "chunks/c022.json",
+      "count": 693,
+      "min": [
+        292.98,
+        -6057.73,
+        -1598.85
+      ],
+      "max": [
+        600.74,
+        3358.13,
+        -0.33
+      ]
+    },
+    {
+      "i": 23,
+      "path": "chunks/c023.json",
+      "count": 694,
+      "min": [
+        602.62,
+        -10117.66,
+        -29342.47
+      ],
+      "max": [
+        82738.52,
+        28131.96,
+        -0.87
+      ]
+    },
+    {
+      "i": 24,
+      "path": "chunks/c024.json",
+      "count": 693,
+      "min": [
+        5.16,
+        -12314.05,
+        -0.05
+      ],
+      "max": [
+        5977.22,
+        -42.19,
+        58.87
+      ]
+    },
+    {
+      "i": 25,
+      "path": "chunks/c025.json",
+      "count": 693,
+      "min": [
+        5.14,
+        -42.17,
+        -0.1
+      ],
+      "max": [
+        1006.2,
+        5.44,
+        58.83
+      ]
+    },
+    {
+      "i": 26,
+      "path": "chunks/c026.json",
+      "count": 693,
+      "min": [
+        5.26,
+        5.46,
+        -0.03
+      ],
+      "max": [
+        1162.22,
+        43.9,
+        58.92
+      ]
+    },
+    {
+      "i": 27,
+      "path": "chunks/c027.json",
+      "count": 694,
+      "min": [
+        5.21,
+        43.94,
+        -0.1
+      ],
+      "max": [
+        4039.49,
+        5991.66,
+        58.75
+      ]
+    },
+    {
+      "i": 28,
+      "path": "chunks/c028.json",
+      "count": 693,
+      "min": [
+        5.18,
+        -8412.33,
+        58.96
+      ],
+      "max": [
+        5788.55,
+        -8.53,
+        177.89
+      ]
+    },
+    {
+      "i": 29,
+      "path": "chunks/c029.json",
+      "count": 693,
+      "min": [
+        6.07,
+        -8.36,
+        59.02
+      ],
+      "max": [
+        6883.91,
+        8088.5,
+        177.87
+      ]
+    },
+    {
+      "i": 30,
+      "path": "chunks/c030.json",
+      "count": 693,
+      "min": [
+        5.14,
+        -6148.47,
+        177.93
+      ],
+      "max": [
+        5074.65,
+        4400.31,
+        344.59
+      ]
+    },
+    {
+      "i": 31,
+      "path": "chunks/c031.json",
+      "count": 694,
+      "min": [
+        7.29,
+        -23838.93,
+        344.61
+      ],
+      "max": [
+        31537.81,
+        29898.9,
+        59378.78
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "chunks/c000.json",
+      "bytes": 261681,
+      "sha256": "7436f474f520079171c4fe3b7246b2753f0dba7c8a0f606ec1893a16b02e1171"
+    },
+    {
+      "path": "chunks/c001.json",
+      "bytes": 281289,
+      "sha256": "04c81e057db28e7ce13b40446e8d6beeef6b9e1220084b9c1e24a081e2c08566"
+    },
+    {
+      "path": "chunks/c002.json",
+      "bytes": 286826,
+      "sha256": "f798e53d1df9added3ce25c7d71aa659f26ca140795f7a507b7925a92ebe3bd3"
+    },
+    {
+      "path": "chunks/c003.json",
+      "bytes": 272114,
+      "sha256": "b47a156f1ab6becf666bced3cebd281fab9c78ec18851fc03a263ff47d6e23a1"
+    },
+    {
+      "path": "chunks/c004.json",
+      "bytes": 261774,
+      "sha256": "2dffa7878b38c3400e5f374e0cb965d5171086db386f99426316983be68711ea"
+    },
+    {
+      "path": "chunks/c005.json",
+      "bytes": 254609,
+      "sha256": "6b37114d26c27d5d1ba37dc6bb5e4324986729168b91c6f32e78ee7079bc8e61"
+    },
+    {
+      "path": "chunks/c006.json",
+      "bytes": 259048,
+      "sha256": "1dd6047340f113ddca42d6517a47d561ff44b61f6346e44ee6a98cb01fa1df33"
+    },
+    {
+      "path": "chunks/c007.json",
+      "bytes": 252707,
+      "sha256": "46db25a07dc8a3c2678c3b2c794edfdec14bba534ea2dcd332e7265e1aaa3791"
+    },
+    {
+      "path": "chunks/c008.json",
+      "bytes": 257213,
+      "sha256": "7d15846475112fea75913ad3adbd6977e38240f721e2837f64ecf341b4147b76"
+    },
+    {
+      "path": "chunks/c009.json",
+      "bytes": 255415,
+      "sha256": "711d93454f648ea50cbd8decb1a434334e3dcdbc57e4392a9a7af49cf872a29e"
+    },
+    {
+      "path": "chunks/c010.json",
+      "bytes": 258665,
+      "sha256": "276473cc0d9578b8a4fd8288ea08ea1434b374b78ceb6b2549eb5578bd863fbe"
+    },
+    {
+      "path": "chunks/c011.json",
+      "bytes": 257196,
+      "sha256": "3734bc8131bca70c48395261fc61a7bb54017561920cb095f26ccf6233aff7df"
+    },
+    {
+      "path": "chunks/c012.json",
+      "bytes": 284632,
+      "sha256": "e3b74d79c8462248f140a5ab07666486dfa748d8c9f9e1f176eb68204a8fe84b"
+    },
+    {
+      "path": "chunks/c013.json",
+      "bytes": 269486,
+      "sha256": "ed992fc6077a6be56c32327cbfd0236b7618527c319c2b99c37f22e6bfa7812d"
+    },
+    {
+      "path": "chunks/c014.json",
+      "bytes": 287471,
+      "sha256": "e6a2f8305827100a1f72abb1a0cdc50747e4d89c08ce229dffab47c03b80560b"
+    },
+    {
+      "path": "chunks/c015.json",
+      "bytes": 266679,
+      "sha256": "7dfd9bea19dd1abb4fd20c91d5467523e5287b0a6808f8c534e010044ee4dd84"
+    },
+    {
+      "path": "chunks/c016.json",
+      "bytes": 259997,
+      "sha256": "b2d520099b65a2e2c15552552e7bb5a1b8abbf673515cbbc88016cb5f2f364a4"
+    },
+    {
+      "path": "chunks/c017.json",
+      "bytes": 253403,
+      "sha256": "885a5f3c197546eea77cc7585a6c47b7410948374263c5f7510ced2fdc86c680"
+    },
+    {
+      "path": "chunks/c018.json",
+      "bytes": 250306,
+      "sha256": "24f5293c9323b6529a82c8b043657eee86119084b91417e9158de24eec3d3f86"
+    },
+    {
+      "path": "chunks/c019.json",
+      "bytes": 259426,
+      "sha256": "a62776ffb794a385e07d62f7e576d28bf880a2ea4aad99e7dc26bb39a8cc17ad"
+    },
+    {
+      "path": "chunks/c020.json",
+      "bytes": 279771,
+      "sha256": "785441ea59af4e15896ede0dbb9bbcc557a134a8b156fe75f8ddff0e7ccfc500"
+    },
+    {
+      "path": "chunks/c021.json",
+      "bytes": 278693,
+      "sha256": "3e60b3c4c88def464408868725c0f6315079084fa0b79b9d92d437e8148a622b"
+    },
+    {
+      "path": "chunks/c022.json",
+      "bytes": 284789,
+      "sha256": "ad3a1d99cb3357048eeb348db225d5a29f84a90c21fdce5d9159d8bc4cf8fc8f"
+    },
+    {
+      "path": "chunks/c023.json",
+      "bytes": 263613,
+      "sha256": "8338bf70d4046130f54671d1451dd74eb0b91b10f477ba35d4f5767ce6412439"
+    },
+    {
+      "path": "chunks/c024.json",
+      "bytes": 259780,
+      "sha256": "64eba11499e5454dcc6d5560e13caaa1bcefcb6eafe4c7f3a4dd2802026fd6a0"
+    },
+    {
+      "path": "chunks/c025.json",
+      "bytes": 249451,
+      "sha256": "282a53079669c4f1672af9ece642f1d27b57b79a296261b9816417e2e11bbadf"
+    },
+    {
+      "path": "chunks/c026.json",
+      "bytes": 245071,
+      "sha256": "cff1d09fde5197deddf589e4e084325bad0efa074ef077c8fcfa1cfd487eb7b7"
+    },
+    {
+      "path": "chunks/c027.json",
+      "bytes": 258924,
+      "sha256": "3590add334ba3c490f966e3634d118be93d1fb0cc525ab503450e546d6916886"
+    },
+    {
+      "path": "chunks/c028.json",
+      "bytes": 268993,
+      "sha256": "93e6fed002d0530f2d4571a43292bc538fcf4ba9060b5a783c690a29c159bdbe"
+    },
+    {
+      "path": "chunks/c029.json",
+      "bytes": 269017,
+      "sha256": "e6f53d8056f92aa8a87260140e07231fcd33dc85e9ff41fcf0d2a9acaa6f192e"
+    },
+    {
+      "path": "chunks/c030.json",
+      "bytes": 281933,
+      "sha256": "e137a0610a0cfc1dfa018e00ca7e8a9b6389eab9a309b3644df40f2bbd8a6d3b"
+    },
+    {
+      "path": "chunks/c031.json",
+      "bytes": 275840,
+      "sha256": "38ca2f751798f2a61deac4d7b905014a02922f9a0d5c57a2936379f9025c2179"
+    },
+    {
+      "path": "search.json",
+      "bytes": 2367826,
+      "sha256": "a82673b4a5c5102d03b1e430ee02c4045872cb3b360f0cfc578205976f0fbb19"
+    },
+    {
+      "path": "sky-only.json",
+      "bytes": 12089,
+      "sha256": "5b14eb316d8f11f81a80ef50e9ea7aad502f6e3c394b80a73b9d7c0266a14735"
+    },
+    {
+      "path": "featured.json",
+      "bytes": 14725,
+      "sha256": "b46b18546dbfb6f5ecc6d7134850a8fd0c105a9690f582f4738d5c5c47792b9c"
+    },
+    {
+      "path": "systems/proxima-centauri.json",
+      "bytes": 930,
+      "sha256": "72607ab2e0c8c98553da8aa3ce11f256938625ef5bd8b00c4a20575fdf3ee86c"
+    },
+    {
+      "path": "systems/alpha-centauri.json",
+      "bytes": 623,
+      "sha256": "6a53e6de06f4bdd3614c627d77f94358c1c479418cd662113ead1585e196c3e9"
+    },
+    {
+      "path": "systems/barnard-s-star.json",
+      "bytes": 1213,
+      "sha256": "345098d67fbdc75273484ae470b74b0edb8b86fe9aa846963379086c69fd7726"
+    },
+    {
+      "path": "systems/luhman-16.json",
+      "bytes": 455,
+      "sha256": "0b1327e3160df4b028a06f838cb63870cd90e68446dac24b7988b4c47ccc3273"
+    },
+    {
+      "path": "systems/wise-0855-0714.json",
+      "bytes": 410,
+      "sha256": "4b7ef774fde316d4c3f7f29072590c61bc835c97e02dbd5d14d7bfa7897d732d"
+    },
+    {
+      "path": "systems/wolf-359.json",
+      "bytes": 464,
+      "sha256": "ff8ebb3688ca3ce65848d39df802f15605e8de9c5164dc2f67dac1bae10dfaec"
+    },
+    {
+      "path": "systems/lalande-21185.json",
+      "bytes": 922,
+      "sha256": "a58821f7b34715d26be69c87a63635b3ef1ad48766ecf7e4b970c1f1b780bd29"
+    },
+    {
+      "path": "systems/sirius.json",
+      "bytes": 471,
+      "sha256": "f4fb11093596837ee0c1f8fcba7a477e0ce84026f04cd6c14d1e9cc7071908cb"
+    },
+    {
+      "path": "systems/luyten-726-8.json",
+      "bytes": 440,
+      "sha256": "516423935ff87146fee929baecc3d3a2b29d29a44e5848ffcbae097b934a6ba0"
+    },
+    {
+      "path": "systems/ross-154.json",
+      "bytes": 403,
+      "sha256": "b375fdd2f489333f698727647746480f4ab2eab5af8083a3f6c259cb01ce628a"
+    },
+    {
+      "path": "systems/ross-248.json",
+      "bytes": 478,
+      "sha256": "6e1833a95f736eb7bd55a59d8ac21ad31abbcd22378740ae003b9aa0e2c29057"
+    },
+    {
+      "path": "systems/epsilon-eridani.json",
+      "bytes": 736,
+      "sha256": "347b0ec5a07fb58c950d86daa23cba12047bb241fd8199b1dd57374aea3fd1de"
+    },
+    {
+      "path": "systems/lacaille-9352.json",
+      "bytes": 1143,
+      "sha256": "9af62b2740d2d72efde3b07bee9784a894a25b4a24db40c4283502c19b924bab"
+    },
+    {
+      "path": "systems/ross-128.json",
+      "bytes": 670,
+      "sha256": "f4798cb03cb46fc91bbfb7f5e110bc1e2393eabe444fcf0814c3ef0cdff7edbb"
+    },
+    {
+      "path": "systems/ez-aquarii.json",
+      "bytes": 444,
+      "sha256": "db908eb6dbd092ae69a47a6c7e76bae52cc2940cff78df07a462042fdba04805"
+    },
+    {
+      "path": "systems/61-cygni.json",
+      "bytes": 579,
+      "sha256": "b37c81e175e6edf94f2c32128170624347478485aebbe62ef99e9ef3b7e443d9"
+    },
+    {
+      "path": "systems/procyon.json",
+      "bytes": 456,
+      "sha256": "5d497bd70d703b1d7718822c2256bed1747167254562f881e925d47c5e87e931"
+    },
+    {
+      "path": "systems/struve-2398.json",
+      "bytes": 956,
+      "sha256": "06f23e782377c60d5a5026dffcff3c18e0bc536c185b60b24665e60603a7de9f"
+    },
+    {
+      "path": "systems/groombridge-34.json",
+      "bytes": 874,
+      "sha256": "49460578eee68373c59cf718f24f13286dff4c86abdcb0fdbd05c74cecf4019c"
+    },
+    {
+      "path": "systems/dx-cancri.json",
+      "bytes": 475,
+      "sha256": "68baa21cca69890ea1d8041bda7453cec19c87d4275ebe94da12fb5a11c10a72"
+    },
+    {
+      "path": "systems/epsilon-indi.json",
+      "bytes": 716,
+      "sha256": "4e694e148a4e56d2505e219000782b4bf1831c147212053270a1e7056e408fa6"
+    },
+    {
+      "path": "systems/tau-ceti.json",
+      "bytes": 1003,
+      "sha256": "9172471d2169a0b4814d7b3c0d32985890ddc35c5d1deb1da0c1326ebda37cae"
+    },
+    {
+      "path": "systems/gj-1061.json",
+      "bytes": 955,
+      "sha256": "736c063e2934a322a130a6a04683729a07b113367fd30e092e7cf0c6ec1c3669"
+    },
+    {
+      "path": "systems/yz-ceti.json",
+      "bytes": 974,
+      "sha256": "8aa92006583475f21dd3b5702338fd95caeb32ea2e7961c931655f6449fe7a83"
+    },
+    {
+      "path": "systems/luyten-s-star.json",
+      "bytes": 883,
+      "sha256": "f2cd7cd85c829800e6fd962e057768102082f6314c2e1012033aa12c2bae962a"
+    },
+    {
+      "path": "systems/teegarden-s-star.json",
+      "bytes": 1069,
+      "sha256": "2cf8f121af2416f91f8692c7cb5e61044ac0169795620b980d59894b9a78d817"
+    },
+    {
+      "path": "systems/kapteyn-s-star.json",
+      "bytes": 730,
+      "sha256": "3ab240fbdd047561f5eab34b784bd81dede5d08326325cf565bf9b8c8ec2c650"
+    },
+    {
+      "path": "systems/lacaille-8760.json",
+      "bytes": 515,
+      "sha256": "e29a3f0e4718ff76dc811fc8f847a9412f277155cd63416ff0cf875e8121943a"
+    },
+    {
+      "path": "systems/scr-1845-6357.json",
+      "bytes": 404,
+      "sha256": "b8615a6391cc810c110c06e88a849fc177df825849968fcea3bcbc0f42d05bd6"
+    },
+    {
+      "path": "systems/kruger-60.json",
+      "bytes": 355,
+      "sha256": "d8e8a959e72ed7c2831fdb22971ba8d05a0978a6709b77ff6d0094f830c4ebfa"
+    },
+    {
+      "path": "systems/ross-614.json",
+      "bytes": 468,
+      "sha256": "243a6ddbc064a3b15e80570070c6855e04fbc124fde03cbfcbbfdc6e6decac84"
+    },
+    {
+      "path": "systems/wolf-1061.json",
+      "bytes": 994,
+      "sha256": "f1a74a85ef13173ddeffbd2deb33f53dfb728ebf74b4b5856fedc8b726c42180"
+    },
+    {
+      "path": "systems/wolf-424.json",
+      "bytes": 539,
+      "sha256": "d9b1e58b79314c39e8b6cd68ef2719af078d526ada952489dca0d33969e73a34"
+    },
+    {
+      "path": "systems/van-maanen-s-star.json",
+      "bytes": 506,
+      "sha256": "7cb27c5dbeeda1e8dfec9aaa37bb4018e171e59a4b40f45aa70192e0cfae4130"
+    },
+    {
+      "path": "systems/gliese-1.json",
+      "bytes": 444,
+      "sha256": "acf820753a6c90437508ad9c16e1a9c63c34e07fe52573675b043a4dfd3a3fd4"
+    },
+    {
+      "path": "systems/tz-arietis.json",
+      "bytes": 798,
+      "sha256": "504bf5db39f9b39c7d409fed3127dd1a4c87130910cb7f0eaeaab244b53d8b74"
+    },
+    {
+      "path": "systems/gliese-674.json",
+      "bytes": 651,
+      "sha256": "07ff9e3eb85f6ce0f6538dbb02d529924511066465521a1a051256a2a4abf6f9"
+    },
+    {
+      "path": "systems/gliese-687.json",
+      "bytes": 779,
+      "sha256": "f09b47822f3ed4b0b657c71d9477057e2485a0074f245defb46e242c921557e8"
+    },
+    {
+      "path": "systems/gliese-440.json",
+      "bytes": 477,
+      "sha256": "cdfea71658dcf685f0dc3f254009702850e48d8750fdd2b33228baf3226acbe5"
+    },
+    {
+      "path": "systems/gliese-876.json",
+      "bytes": 1135,
+      "sha256": "a40853fb0ceb01642d9c7b8f87674ba9d0beea98950f9e42ff475c03989dbcb1"
+    },
+    {
+      "path": "systems/lhs-288.json",
+      "bytes": 450,
+      "sha256": "0abb364c9fe8cc8483cb4558721908de09bc64d3df02e00627a092855269c0ae"
+    },
+    {
+      "path": "systems/gj-1002.json",
+      "bytes": 743,
+      "sha256": "ff39c31ae76f72e2aaead82b22d86c9fbd94f1b11eb4854740d272628bd8f2e6"
+    },
+    {
+      "path": "systems/gliese-412.json",
+      "bytes": 448,
+      "sha256": "7bd116663fc1911ecbe7fb0d72870db6f89b6e71120b7fdf0fb3e02259223699"
+    },
+    {
+      "path": "systems/groombridge-1618.json",
+      "bytes": 422,
+      "sha256": "458cc9e35d4fd500a3e9f5b98aa68d7c1e8b4b8c0d7ac4494487a8b4e27c4916"
+    },
+    {
+      "path": "systems/ad-leonis.json",
+      "bytes": 429,
+      "sha256": "6809c6a46989ffab6aab307c556cd335a2040b7274388d7cec99341f4447e4b2"
+    },
+    {
+      "path": "systems/gliese-832.json",
+      "bytes": 642,
+      "sha256": "aec4d0306de04edb8772d85e81fff4ff08b301fdceb4232ab39a7f14a5d48af0"
+    },
+    {
+      "path": "systems/40-eridani.json",
+      "bytes": 804,
+      "sha256": "329d5ef3427f417b5bf26384f74e9da4df8110965ca5e22b7e1c5eaee3e51e02"
+    },
+    {
+      "path": "systems/70-ophiuchi.json",
+      "bytes": 568,
+      "sha256": "c871a94b42038cf33fc5cda1840c8cdd273a76a2a61225d3827f0cebd423926d"
+    },
+    {
+      "path": "systems/altair.json",
+      "bytes": 331,
+      "sha256": "6fd03f43c8af240311d1f73f430a521c76e7adb9772a70ab4aa7c489a7b5dc94"
+    },
+    {
+      "path": "systems/solar-system.json",
+      "bytes": 1483,
+      "sha256": "02e0c9ef5d7c8149eecabeb968a5602ee206282a7285a307553951442969d4ba"
+    }
+  ],
+  "regenerate": "node catalog-build/build.mjs   (add --refetch to re-download; raw downloads are cached in catalog-build/cache/)"
+}
